@@ -97,6 +97,7 @@ class QuestionImageMerger:
                     candidate_images,
                     original_image
                 )
+            print(f"+++++++++++++{verified_images}")
 
             # 步骤3: 标记已使用的图像
             for img in verified_images:

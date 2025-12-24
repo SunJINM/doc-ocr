@@ -8,7 +8,7 @@ import requests
 API_URL = "https://2dpbo1a3kacegcw7.aistudio-app.com/layout-parsing"
 TOKEN = "661cde66b036acc549db86b61fb33e1de6a60ce8"
 
-file_path = r"D:\WorkProjects\doc-ocr\data\shuxue\1.png"
+file_path = r"D:\WorkProjects\doc-ocr\data\shuxue\mifeng_1.jpg"
 
 with open(file_path, "rb") as file:
     file_bytes = file.read()
@@ -58,7 +58,7 @@ result = response.json()["result"]
 output_dir = "output"
 os.makedirs(output_dir, exist_ok=True)
 
-with open("result_data.json", "w", encoding="utf-8") as f:
+with open("result_data1.json", "w", encoding="utf-8") as f:
     json.dump(result, f, ensure_ascii=False, indent=4)
 
 for i, res in enumerate(result["layoutParsingResults"]):

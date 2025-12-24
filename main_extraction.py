@@ -48,19 +48,19 @@ def main():
     parser.add_argument(
         '--result-data',
         type=str,
-        default='output/result_data.json',
+        default='output/result_data1.json',
         help='PP-OCR-VL检测结果JSON路径'
     )
     parser.add_argument(
         '--image',
         type=str,
-        default='data/shuxue/1.png',
+        default='data/shuxue/mifeng_1.jpg',
         help='原始试卷图像路径'
     )
     parser.add_argument(
         '--output',
         type=str,
-        default='output/structured_questions.json',
+        default='output/structured_questions1.json',
         help='输出结构化题目JSON路径'
     )
     parser.add_argument(

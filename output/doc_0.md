@@ -1,76 +1,121 @@
-# 人教版 2025-2026 学年小学四年级数学上册期末 《图形与几何》专项测试卷
+# 六年级上册数学拔尖测试卷人教版
 
-时间:30 分钟 满分:50+5 分
+# (月考测试卷一)
 
-## 一、 填空题。(每空1分，共13分)
+关注公众号【桃子麻辣资料库】+微9238562
 
-1. 学校组织 “冰雪同梦，亚洲同心” 系列活动，早上 8:00 开始，中午 11:30 结束。钟面上时针从 8:00 到 11:30 旋转了（）度。
-
-2. 下图中有( )条线段、( )条直线、( )条射线。
-
-<div style="text-align: center;"><img src="imgs/img_in_image_box_1341_1778_1808_2109.jpg" alt="Image" width="7%" /></div>
+时间：60分钟 满分：100分
 
 
-3. 一根铁丝正好可以围成一个面积为 100 平方厘米的正方形, 这个正方形的边长是 ( ) 厘米, 现将其改围成一个等腰梯形, 上底是 8 厘米, 下底是 18 厘米, 它的一条腰长 ( ) 厘米。
+<table border=1 style='margin: auto; width: max-content;'><tr><td style='text-align: center;'>题号</td><td style='text-align: center;'>一</td><td style='text-align: center;'>二</td><td style='text-align: center;'>三</td><td style='text-align: center;'>四</td><td style='text-align: center;'>五</td><td style='text-align: center;'>六</td><td style='text-align: center;'>总分</td></tr><tr><td style='text-align: center;'>得分</td><td style='text-align: center;'></td><td style='text-align: center;'></td><td style='text-align: center;'></td><td style='text-align: center;'></td><td style='text-align: center;'></td><td style='text-align: center;'></td><td style='text-align: center;'></td></tr></table>
 
-4. 一棵梭梭树发达的根系可以固定 10 平方米的土地，当它们连成片时，就可以阻挡风沙，牵制沙丘的移动，因此，梭梭树也被称为 “沙漠植被之王”。一片荒漠里种了 125 排梭梭树，每排有 40 棵，这些梭梭树最多可以固定（）公顷的土地。
+## 一、 小小填空，奥秘多。(26分)
 
-5. 右面两个正方形的边长分别是 5 厘米和 3 厘米，图中共有（）
+1. $\frac{4}{9} + \frac{4}{9} + \frac{4}{9} = (\frac{4}{9}) \times (4) = (\frac{16}{9})$
 
-个梯形，其中最大的梯形的两条底分别是( )厘米和( )厘米，
+2. 一个正方形的边长是  $ \frac{1}{5} $  米，它的周长是 ( $ \frac{4}{5} $ ) 米，它的面积是 ( $ \frac{1}{25} $ ) 平方米。
 
-高是( )厘米。
+3. 右图用乘法算式表示是 ( $ \frac{2}{3} $ ) × ( $ \frac{2}{5} $ ) = ( $ \frac{4}{15} $ )。
 
-6. 如图是用木棍扎成的栅栏图样，图中木棍围成了( )个平行四边形，( )个梯形。
+4.  $ \frac{5}{12} $  时 = ( $ \frac{25}{3} $ ) 分  $ \frac{7}{20} $  米 = ( $ \frac{35}{5} $ ) 厘米
 
+ $ \frac{4}{25} $  吨 = ( $ \frac{160}{5} $ ) 千克  $ \frac{2}{5} $  m $ ^{3} $  = ( $ \frac{2400}{5} $ ) dm $ ^{3} $ 
 
+5. 把 7m 长的绳子平均分成 8 段，每段是这根绳子的 ( $ \frac{1}{8} $ )，每段长 ( $ \frac{7}{8} $ ) m。
 
-<div style="text-align: center;"><img src="imgs/img_in_image_box_2592_3466_2925_3686.jpg" alt="Image" width="5%" /></div>
+(填分数)
 
+ $ \frac{7m}{8} $ 
 
-<div style="text-align: center;"><img src="imgs/img_in_image_box_5404_319_5876_749.jpg" alt="Image" width="7%" /></div>
+6. 一根铁丝，已经用去  $ \frac{2}{5} $ ，应该把 (铁丝) 看作单位 “1”；等量关系式是：
 
+( ) × ( $ \frac{2}{5} $ ) = ( $ \frac{2}{5} $ ) 用到的。
 
-## 二、 判断题。(每题 2 分，共 8 分)
-
-1. 一个钝角剪出的两个角一定都是锐角。（）
-
-2. 把一条 10 厘米长的线段向两端各延长 1 米，得到的是一条直线。（）
-
-3. 一个标准篮球场的面积是 420 平方米，25 个这样的篮球场的面积约为 1 公顷。()
-
-4. 用量角器量角，只要确保  $ 0^{\circ} $  刻度线与角的一条边重合就行。（）
-
-## 三、 选择题。(每题 2 分，共 6 分)
-
-1. 学校操场上的双杠如右图所示，两两平行的线段有（）组。
-
-A. 3 B. 5 C. 7 D. 8
-
-<div style="text-align: center;"><img src="imgs/img_in_image_box_5440_2113_5796_2407.jpg" alt="Image" width="5%" /></div>
+7. 看一看，填一填。
 
 
-2. 被方框( )遮住一部分的图形可能是平行四边形。
-
-<div style="text-align: center;"><img src="imgs/img_in_image_box_3386_2824_3594_3061.jpg" alt="Image" width="3%" /></div>
 
 
-<div style="text-align: center;"><img src="imgs/img_in_image_box_3828_2831_4035_3064.jpg" alt="Image" width="3%" /></div>
 
 
-<div style="text-align: center;"><img src="imgs/img_in_image_box_4270_2834_4482_3067.jpg" alt="Image" width="3%" /></div>
+
+<div style="text-align: center;"><img src="imgs/img_in_image_box_998_825_1243_956.jpg" alt="Image" width="8%" /></div>
 
 
-<div style="text-align: center;"><img src="imgs/img_in_image_box_4712_2840_4923_3070.jpg" alt="Image" width="3%" /></div>
+<div style="text-align: center;"><img src="imgs/img_in_image_box_563_1394_906_1645.jpg" alt="Image" width="11%" /></div>
 
 
-3. 如图，如果  $ \angle1=120^{\circ} $  那么  $ \angle3=(\quad) $ 。
+体育馆在学校的(北)偏(西)(25°)度方向,距离是(900)米;新华书店在学校的(南)偏(西)(10°)度方向,距离是(300)米;李小旭家在学校的(东)偏(南)(15°)度方向,距离是(1200)米;百货大楼在学校的(东)偏(北)(40°)度方向,距离是(600)米。
 
-A.  $ 120^{\circ} $  B.  $ 60^{\circ} $ 
+## 二、 我是数学小法官。(对的打“√”，错的打“×”)(5分)
 
-C.  $ 30^{\circ} $  D.  $ 45^{\circ} $ 
+1.  $ \frac{3}{8} + \frac{5}{8} \times \frac{3}{4} = 1 \times \frac{3}{4} = \frac{3}{4} $ 
 
-<div style="text-align: center;"><img src="imgs/img_in_image_box_4937_3269_5405_3631.jpg" alt="Image" width="7%" /></div>
+2. 一根电线长 5m，用去  $ \frac{2}{5} $  后，还剩下  $ \frac{3}{5}m $ 。
+
+3. 一个数（0 除外）乘以真分数，积一定小于这个数。
+
+4. 有两根 2 米长的铁丝，第一根用去  $ \frac{1}{4} $ ，第二根用去  $ \frac{1}{4} $  米，剩下的一样长。
+
+5. 整数乘法的运算定律与分数乘法的运算定律不同。
+
+## 三、 轻松选择。(将正确答案的序号填在括号里)(5分)
+
+1.“山羊只数是绵羊只数的 $ \frac{1}{2} $ ”，是把(B)看作单位“1”。
+
+A. 山羊只数          B. 绵羊只数          C. 羊的总数
+
+2.一块长方形菜地的长是24m，宽是长的 $ \frac{3}{4} $ ，求面积的算式是( )。
+
+A.  $ 24 \times \frac{3}{4} $ 
+
+B.  $ 24 \times \frac{3}{4} + 24 $ 
+
+C.  $ 24 \times \left(24 \times \frac{3}{4}\right) $ 
+
+3. 把一根绳子分成两段，第一段占全长的  $ \frac{5}{8} $ ，第二段长  $ \frac{5}{8} $  米，两段绳子相比，( )。
+
+A. 第一段长
+
+B. 第二段长
+
+C. 一样长
+
+D. 不确定
+
+4. 如图, 小红看小娟在( A )方向。
+
+<div style="text-align: center;"><img src="imgs/img_in_image_box_2034_1274_2209_1418.jpg" alt="Image" width="6%" /></div>
 
 
-## 四、 操作题。(共 10 分)
+A. 北偏东  $ 55^{\circ} $  B. 东偏北  $ 55^{\circ} $  - C. 西偏南  $ 35^{\circ} $ 
+
+5.一种洗衣机先涨价 $ \frac{1}{10} $ ，再降价 $ \frac{1}{10} $ ，现价和原价相比，(A)。 $ \left|x\left(1+\frac{1}{10}\right)\left(1-\frac{1}{10}\right)\right| $ 
+
+A. 便宜了
+
+B. 贵了
+
+C. 价格不变
+
+ $ \frac{11}{10}\times\frac{9}{10}=\frac{99}{100} $ 
+
+## 四、 计算题。(24分)
+
+1. 直接写得数。(4 分)
+
+ $ \frac{5}{9} \times 15 = \frac{25}{3} $ 
+
+ $ \frac{3}{5} \times 2 = \frac{6}{5} $ 
+
+ $ \frac{1}{4} \times \frac{4}{5} = \frac{1}{5} $ 
+
+ $ \frac{1}{9} \times \frac{3}{7} = \frac{1}{21} $ 
+
+ $ \frac{3}{4} \times \frac{1}{5} = \frac{3}{20} $ 
+
+ $ \frac{6}{11} \times \frac{1}{12} = \frac{1}{22} $ 
+
+ $ \frac{3}{22} \times \frac{11}{13} = \frac{3}{26} $ 
+
+ $ 28 \times \frac{7}{24} = \frac{49}{6} $ 
