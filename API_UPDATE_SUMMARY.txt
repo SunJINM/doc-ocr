@@ -1,0 +1,84 @@
+================================================================================
+                    PaddleOCR API 更新说明 (v1.0.1)
+================================================================================
+
+🔧 问题: PaddleOCR新版本API变化导致OCR调用失败
+
+错误信息:
+  ERROR - OCR定位失败: PaddleOCR.predict() got an unexpected keyword 
+  argument 'det'
+
+📝 解决方案:
+
+1. 修改OCR初始化参数
+   
+   旧版 (废弃):
+     use_angle_cls=True
+     use_gpu=True
+     det=True, rec=True, cls=False
+     det_db_thresh=0.3
+   
+   新版 (当前):
+     lang='ch'
+     device='cpu'  # 或 'gpu'
+     use_doc_orientation_classify=False
+     use_textline_orientation=True
+
+2. 修改OCR调用方式
+   
+   旧版 (废弃):
+     ocr.ocr(image, det=True, rec=True, cls=False)
+   
+   新版 (当前):
+     ocr.predict(input=image_path, return_word_box=True)
+
+3. 修改结果解析
+   
+   新版使用 result.boxes 对象，包含:
+     - box_info['points']: 坐标点
+     - box_info['text']: 文本内容  
+     - box_info['score']: 置信度
+
+📁 已修改文件:
+
+  ✅ src/question_extraction/question_splitter.py
+     - _locate_question_numbers_with_ocr() 方法
+     - 使用临时文件传递图像
+     - 更新结果解析逻辑
+
+  ✅ src/question_extraction/config.py
+     - OCRConfig 配置类
+     - 移除旧参数，添加新参数
+
+  ✅ main_extraction.py
+     - OCR初始化代码
+     - 使用新版配置参数
+
+  ✅ test_extraction.py (用户已修改)
+     - device='cpu' 参数
+
+  ✅ CHANGELOG.md (新建)
+     - 详细更新说明
+     - API变化对比
+
+  ✅ README_EXTRACTION.md
+     - 添加兼容性提示
+
+🚀 测试方法:
+
+  python test_extraction.py
+
+预期结果:
+  ✅ 所有测试通过！
+  
+如果失败:
+  检查 extraction.log 日志文件
+
+💡 GPU使用:
+
+  编辑 src/question_extraction/config.py:
+    device: str = 'gpu'  # 改为 'gpu'
+
+================================================================================
+                          修复完成，可以重新测试
+================================================================================

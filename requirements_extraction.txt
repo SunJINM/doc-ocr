@@ -1,0 +1,19 @@
+# 题目提取模块依赖
+
+# 核心依赖
+opencv-python>=4.8.0
+numpy>=1.24.0
+paddlepaddle-gpu>=3.0.0  # 或 paddlepaddle（CPU版本）
+paddleocr>=3.0.0
+
+# OpenAI SDK（用于Qwen-VL）
+openai>=1.0.0
+
+# 通义千问SDK（备选）
+# dashscope>=1.14.0
+
+# 工具库
+Pillow>=10.0.0
+
+# 日志和配置
+python-dotenv>=1.0.0

@@ -1,0 +1,413 @@
+{
+  "exam_info": {
+    "title": "人教版 2025-2026 学年小学四年级数学上册期末\n《图形与几何》专项测试卷",
+    "subject": "数学",
+    "grade": "四年级",
+    "time_limit": "30分钟",
+    "total_score": "50+5"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "填空题",
+      "score": 0,
+      "content": {
+        "text": "1. 学校组织 “冰雪同梦，亚洲同心” 系列活动，早上 8:00 开始，中午 11:30 结束。钟面上时针从 8:00 到 11:30 旋转了（）度。",
+        "has_image": false,
+        "image_count": 0,
+        "images": []
+      },
+      "bbox": [
+        131,
+        1165,
+        2996,
+        1437
+      ],
+      "metadata": {
+        "split_from_merged": false
+      }
+    },
+    {
+      "id": 1,
+      "type": "填空题",
+      "score": 0,
+      "content": {
+        "text": "1. 一个钝角剪出的两个角一定都是锐角。（）",
+        "has_image": false,
+        "image_count": 0,
+        "images": []
+      },
+      "bbox": [
+        3098,
+        977,
+        4931,
+        1083
+      ],
+      "metadata": {
+        "split_from_merged": false
+      }
+    },
+    {
+      "id": 1,
+      "type": "选择题",
+      "score": 0,
+      "content": {
+        "text": "1. 学校操场上的双杠如右图所示，两两平行的线段有（）组。\nA. 3 B. 5 C. 7 D. 8",
+        "has_image": true,
+        "image_count": 1,
+        "images": [
+          {
+            "block_id": 18,
+            "bbox": [
+              5440,
+              2113,
+              5796,
+              2407
+            ],
+            "vl_verified": true,
+            "verification": {
+              "is_related": true,
+              "reason": "这张图片展示了双杠的结构，其中包含多组平行的线段。题目要求判断两两平行的线段有多少组，因此图片是解答该问题的关键信息来源。",
+              "confidence": 0.95
+            }
+          }
+        ]
+      },
+      "bbox": [
+        3104,
+        2113,
+        5796,
+        2504
+      ],
+      "metadata": {
+        "split_from_merged": false,
+        "image_count": 1,
+        "spatial_candidates": 1
+      }
+    },
+    {
+      "id": 2,
+      "type": "填空题",
+      "score": 0,
+      "content": {
+        "text": "2. 下图中有( )条线段、( )条直线、( )条射线。",
+        "has_image": true,
+        "image_count": 1,
+        "images": [
+          {
+            "block_id": 5,
+            "bbox": [
+              1341,
+              1778,
+              1808,
+              2109
+            ],
+            "vl_verified": true,
+            "verification": {
+              "is_related": true,
+              "reason": "这张图片与题目直接相关，因为它提供了图中的点和线段信息，帮助解答题目中关于线段、直线和射线的数量问题。",
+              "confidence": 0.95
+            }
+          }
+        ]
+      },
+      "bbox": [
+        129,
+        1538,
+        2197,
+        2109
+      ],
+      "metadata": {
+        "split_from_merged": false,
+        "image_count": 1,
+        "spatial_candidates": 1
+      }
+    },
+    {
+      "id": 2,
+      "type": "填空题",
+      "score": 0,
+      "content": {
+        "text": "2. 把一条 10 厘米长的线段向两端各延长 1 米，得到的是一条直线。（）",
+        "has_image": false,
+        "image_count": 0,
+        "images": []
+      },
+      "bbox": [
+        3090,
+        1203,
+        5902,
+        1411
+      ],
+      "metadata": {
+        "split_from_merged": true
+      }
+    },
+    {
+      "id": 2,
+      "type": "填空题",
+      "score": 0,
+      "content": {
+        "text": "2. 被方框( )遮住一部分的图形可能是平行四边形。",
+        "has_image": true,
+        "image_count": 1,
+        "images": [
+          {
+            "block_id": 20,
+            "bbox": [
+              3386,
+              2824,
+              3594,
+              3061
+            ],
+            "vl_verified": true,
+            "verification": {
+              "index": 0,
+              "is_related": true,
+              "reason": "图A显示了一个倾斜的四边形，虽然部分被遮挡，但其形状符合平行四边形的特征（对边平行且相等）。因此，它可能是平行四边形。",
+              "confidence": 0.9
+            }
+          }
+        ]
+      },
+      "bbox": [
+        3094,
+        2605,
+        4996,
+        3061
+      ],
+      "metadata": {
+        "split_from_merged": false,
+        "image_count": 1,
+        "spatial_candidates": 4
+      }
+    },
+    {
+      "id": 3,
+      "type": "填空题",
+      "score": 0,
+      "content": {
+        "text": "3. 一根铁丝正好可以围成一个面积为 100 平方厘米的正方形, 这个正方形的边长是 ( ) 厘米, 现将其改围成一个等腰梯形, 上底是 8 厘米, 下底是 18 厘米, 它的一条腰长 ( ) 厘米。",
+        "has_image": false,
+        "image_count": 0,
+        "images": []
+      },
+      "bbox": [
+        128,
+        2239,
+        3008,
+        2677
+      ],
+      "metadata": {
+        "split_from_merged": false
+      }
+    },
+    {
+      "id": 3,
+      "type": "填空题",
+      "score": 0,
+      "content": {
+        "text": "3. 一个标准篮球场的面积是 420 平方米，25 个这样的篮球场的面积约为 1 公顷。()",
+        "has_image": false,
+        "image_count": 0,
+        "images": []
+      },
+      "bbox": [
+        3090,
+        1411,
+        5902,
+        1667
+      ],
+      "metadata": {
+        "split_from_merged": true
+      }
+    },
+    {
+      "id": 3,
+      "type": "选择题",
+      "score": 0,
+      "content": {
+        "text": "3. 如图，如果  $ \\angle1=120^{\\circ} $  那么  $ \\angle3=(\\quad) $ 。\nA.  $ 120^{\\circ} $  B.  $ 60^{\\circ} $ \nC.  $ 30^{\\circ} $  D.  $ 45^{\\circ} $ ",
+        "has_image": true,
+        "image_count": 1,
+        "images": [
+          {
+            "block_id": 23,
+            "bbox": [
+              4712,
+              2840,
+              4923,
+              3070
+            ],
+            "vl_verified": true,
+            "verification": {
+              "is_related": true,
+              "reason": "这张图片与题目直接相关，因为它展示了角1和角3的位置关系。通过观察图形，可以判断角1和角3是邻补角（即它们在一条直线上，且相邻），因此它们的和为180度。已知角1为120度，所以角3为180 - 120 = 60度。",
+              "confidence": 0.95
+            }
+          }
+        ]
+      },
+      "bbox": [
+        3097,
+        2840,
+        4923,
+        3736
+      ],
+      "metadata": {
+        "split_from_merged": false,
+        "image_count": 1,
+        "spatial_candidates": 1
+      }
+    },
+    {
+      "id": 4,
+      "type": "填空题",
+      "score": 0,
+      "content": {
+        "text": "4. 一棵梭梭树发达的根系可以固定 10 平方米的土地，当它们连成片时，就可以阻挡风沙，牵制沙丘的移动，因此，梭梭树也被称为 “沙漠植被之王”。一片荒漠里种了 125 排梭梭树，每排有 40 棵，这些梭梭树最多可以固定（）公顷的土地。",
+        "has_image": false,
+        "image_count": 0,
+        "images": []
+      },
+      "bbox": [
+        134,
+        2779,
+        3012,
+        3378
+      ],
+      "metadata": {
+        "split_from_merged": false,
+        "image_count": 0,
+        "spatial_candidates": 1
+      }
+    },
+    {
+      "id": 4,
+      "type": "填空题",
+      "score": 0,
+      "content": {
+        "text": "4. 用量角器量角，只要确保  $ 0^{\\circ} $  刻度线与角的一条边重合就行。（）",
+        "has_image": false,
+        "image_count": 0,
+        "images": []
+      },
+      "bbox": [
+        3095,
+        1771,
+        5677,
+        1877
+      ],
+      "metadata": {
+        "split_from_merged": false,
+        "image_count": 0,
+        "spatial_candidates": 1
+      }
+    },
+    {
+      "id": 5,
+      "type": "填空题",
+      "score": 0,
+      "content": {
+        "text": "5. 右面两个正方形的边长分别是 5 厘米和 3 厘米，图中共有（）\n个梯形，其中最大的梯形的两条底分别是( )厘米和( )厘米，\n高是( )厘米。\n6. 如图是用木棍扎成的栅栏图样，图中木棍围成了( )个平行四边形，( )个梯形。",
+        "has_image": true,
+        "image_count": 1,
+        "images": [
+          {
+            "block_id": 10,
+            "bbox": [
+              2592,
+              3466,
+              2925,
+              3686
+            ],
+            "vl_verified": true,
+            "verification": {
+              "is_related": true,
+              "reason": "这张图片与题目直接相关，因为它展示了两个正方形（边长分别为5厘米和3厘米）以及它们之间的连接线，这正是题目中提到的图形。图片帮助解答者识别图中的梯形数量、最大梯形的底和高，以及后续关于栅栏图样中平行四边形和梯形的数量问题。",
+              "confidence": 0.95
+            }
+          }
+        ]
+      },
+      "bbox": [
+        124,
+        3466,
+        2925,
+        4008
+      ],
+      "metadata": {
+        "split_from_merged": true,
+        "image_count": 1,
+        "spatial_candidates": 1
+      }
+    },
+    {
+      "id": null,
+      "type": "其他",
+      "score": 0,
+      "content": {
+        "text": "时间:30 分钟 满分:50+5 分",
+        "has_image": false,
+        "image_count": 0,
+        "images": []
+      },
+      "bbox": [
+        1071,
+        742,
+        2068,
+        845
+      ],
+      "metadata": {
+        "split_from_merged": false
+      }
+    },
+    {
+      "id": null,
+      "type": "其他",
+      "score": 0,
+      "content": {
+        "text": "",
+        "has_image": true,
+        "image_count": 1,
+        "images": [
+          {
+            "block_id": 11,
+            "bbox": [
+              5404,
+              319,
+              5876,
+              749
+            ],
+            "vl_verified": true,
+            "verification": {
+              "is_related": true,
+              "reason": "这张图片与题目直接相关，因为它展示了由线条构成的几何图形，可能用于分析图形的结构、对称性或计算交点数量等数学问题。",
+              "confidence": 0.95
+            }
+          }
+        ]
+      },
+      "bbox": [
+        3085,
+        319,
+        5876,
+        749
+      ],
+      "metadata": {
+        "split_from_merged": false,
+        "image_count": 1,
+        "spatial_candidates": 1
+      }
+    }
+  ],
+  "metadata": {
+    "total_questions": 14,
+    "with_images": 6,
+    "total_images": 6,
+    "split_count": 3,
+    "processing_timestamp": "2025-12-24T14:05:49.770328",
+    "original_image": "data/shuxue/1.png",
+    "result_data": "output/result_data.json"
+  }
+}

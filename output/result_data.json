@@ -1,0 +1,774 @@
+{
+    "layoutParsingResults": [
+        {
+            "prunedResult": {
+                "page_count": null,
+                "width": 6335,
+                "height": 4475,
+                "model_settings": {
+                    "use_doc_preprocessor": false,
+                    "use_layout_detection": true,
+                    "use_chart_recognition": false,
+                    "format_block_content": false,
+                    "merge_layout_blocks": true,
+                    "markdown_ignore_labels": [
+                        "header",
+                        "header_image",
+                        "footer",
+                        "footer_image",
+                        "number",
+                        "footnote",
+                        "aside_text"
+                    ]
+                },
+                "parsing_res_list": [
+                    {
+                        "block_label": "doc_title",
+                        "block_content": "人教版 2025-2026 学年小学四年级数学上册期末\n《图形与几何》专项测试卷",
+                        "block_bbox": [
+                            358,
+                            358,
+                            2837,
+                            689
+                        ],
+                        "block_id": 0,
+                        "block_order": 1,
+                        "group_id": 0
+                    },
+                    {
+                        "block_label": "text",
+                        "block_content": "时间:30 分钟 满分:50+5 分",
+                        "block_bbox": [
+                            1071,
+                            742,
+                            2068,
+                            845
+                        ],
+                        "block_id": 1,
+                        "block_order": 2,
+                        "group_id": 1
+                    },
+                    {
+                        "block_label": "paragraph_title",
+                        "block_content": "一、填空题。(每空1分，共13分)",
+                        "block_bbox": [
+                            129,
+                            954,
+                            1397,
+                            1059
+                        ],
+                        "block_id": 2,
+                        "block_order": 3,
+                        "group_id": 2
+                    },
+                    {
+                        "block_label": "text",
+                        "block_content": "1. 学校组织 “冰雪同梦，亚洲同心” 系列活动，早上 8:00 开始，中午 11:30 结束。钟面上时针从 8:00 到 11:30 旋转了（）度。",
+                        "block_bbox": [
+                            131,
+                            1165,
+                            2996,
+                            1437
+                        ],
+                        "block_id": 3,
+                        "block_order": 4,
+                        "group_id": 3
+                    },
+                    {
+                        "block_label": "text",
+                        "block_content": "2. 下图中有( )条线段、( )条直线、( )条射线。",
+                        "block_bbox": [
+                            129,
+                            1538,
+                            2197,
+                            1643
+                        ],
+                        "block_id": 4,
+                        "block_order": 5,
+                        "group_id": 4
+                    },
+                    {
+                        "block_label": "image",
+                        "block_content": "",
+                        "block_bbox": [
+                            1341,
+                            1778,
+                            1808,
+                            2109
+                        ],
+                        "block_id": 5,
+                        "block_order": null,
+                        "group_id": 5
+                    },
+                    {
+                        "block_label": "text",
+                        "block_content": "3. 一根铁丝正好可以围成一个面积为 100 平方厘米的正方形, 这个正方形的边长是 ( ) 厘米, 现将其改围成一个等腰梯形, 上底是 8 厘米, 下底是 18 厘米, 它的一条腰长 ( ) 厘米。",
+                        "block_bbox": [
+                            128,
+                            2239,
+                            3008,
+                            2677
+                        ],
+                        "block_id": 6,
+                        "block_order": 6,
+                        "group_id": 6
+                    },
+                    {
+                        "block_label": "text",
+                        "block_content": "4. 一棵梭梭树发达的根系可以固定 10 平方米的土地，当它们连成片时，就可以阻挡风沙，牵制沙丘的移动，因此，梭梭树也被称为 “沙漠植被之王”。一片荒漠里种了 125 排梭梭树，每排有 40 棵，这些梭梭树最多可以固定（）公顷的土地。",
+                        "block_bbox": [
+                            134,
+                            2779,
+                            3012,
+                            3378
+                        ],
+                        "block_id": 7,
+                        "block_order": 7,
+                        "group_id": 7
+                    },
+                    {
+                        "block_label": "text",
+                        "block_content": "5. 右面两个正方形的边长分别是 5 厘米和 3 厘米，图中共有（）\n个梯形，其中最大的梯形的两条底分别是( )厘米和( )厘米，\n高是( )厘米。\n6. 如图是用木棍扎成的栅栏图样，图中木棍围成了( )个平行四边形，( )个梯形。",
+                        "block_bbox": [
+                            124,
+                            3485,
+                            2510,
+                            4008
+                        ],
+                        "block_id": 8,
+                        "block_order": 8,
+                        "group_id": 8
+                    },
+                    {
+                        "block_label": "text",
+                        "block_content": "",
+                        "block_bbox": [
+                            3085,
+                            352,
+                            5355,
+                            669
+                        ],
+                        "block_id": 9,
+                        "block_order": 9,
+                        "group_id": 8
+                    },
+                    {
+                        "block_label": "image",
+                        "block_content": "",
+                        "block_bbox": [
+                            2592,
+                            3466,
+                            2925,
+                            3686
+                        ],
+                        "block_id": 10,
+                        "block_order": null,
+                        "group_id": 10
+                    },
+                    {
+                        "block_label": "image",
+                        "block_content": "",
+                        "block_bbox": [
+                            5404,
+                            319,
+                            5876,
+                            749
+                        ],
+                        "block_id": 11,
+                        "block_order": null,
+                        "group_id": 11
+                    },
+                    {
+                        "block_label": "paragraph_title",
+                        "block_content": "二、判断题。(每题 2 分，共 8 分)",
+                        "block_bbox": [
+                            3087,
+                            768,
+                            4317,
+                            873
+                        ],
+                        "block_id": 12,
+                        "block_order": 10,
+                        "group_id": 12
+                    },
+                    {
+                        "block_label": "text",
+                        "block_content": "1. 一个钝角剪出的两个角一定都是锐角。（）",
+                        "block_bbox": [
+                            3098,
+                            977,
+                            4931,
+                            1083
+                        ],
+                        "block_id": 13,
+                        "block_order": 11,
+                        "group_id": 13
+                    },
+                    {
+                        "block_label": "text",
+                        "block_content": "2. 把一条 10 厘米长的线段向两端各延长 1 米，得到的是一条直线。（）\n3. 一个标准篮球场的面积是 420 平方米，25 个这样的篮球场的面积约为 1 公顷。()",
+                        "block_bbox": [
+                            3090,
+                            1189,
+                            5902,
+                            1667
+                        ],
+                        "block_id": 14,
+                        "block_order": 12,
+                        "group_id": 14
+                    },
+                    {
+                        "block_label": "text",
+                        "block_content": "4. 用量角器量角，只要确保  $ 0^{\\circ} $  刻度线与角的一条边重合就行。（）",
+                        "block_bbox": [
+                            3095,
+                            1771,
+                            5677,
+                            1877
+                        ],
+                        "block_id": 15,
+                        "block_order": 13,
+                        "group_id": 15
+                    },
+                    {
+                        "block_label": "paragraph_title",
+                        "block_content": "三、选择题。(每题 2 分，共 6 分)",
+                        "block_bbox": [
+                            3089,
+                            1978,
+                            4317,
+                            2082
+                        ],
+                        "block_id": 16,
+                        "block_order": 14,
+                        "group_id": 16
+                    },
+                    {
+                        "block_label": "text",
+                        "block_content": "1. 学校操场上的双杠如右图所示，两两平行的线段有（）组。\nA. 3 B. 5 C. 7 D. 8",
+                        "block_bbox": [
+                            3104,
+                            2185,
+                            5326,
+                            2504
+                        ],
+                        "block_id": 17,
+                        "block_order": 15,
+                        "group_id": 17
+                    },
+                    {
+                        "block_label": "image",
+                        "block_content": "",
+                        "block_bbox": [
+                            5440,
+                            2113,
+                            5796,
+                            2407
+                        ],
+                        "block_id": 18,
+                        "block_order": null,
+                        "group_id": 18
+                    },
+                    {
+                        "block_label": "text",
+                        "block_content": "2. 被方框( )遮住一部分的图形可能是平行四边形。",
+                        "block_bbox": [
+                            3094,
+                            2605,
+                            4996,
+                            2707
+                        ],
+                        "block_id": 19,
+                        "block_order": 16,
+                        "group_id": 19
+                    },
+                    {
+                        "block_label": "image",
+                        "block_content": "",
+                        "block_bbox": [
+                            3386,
+                            2824,
+                            3594,
+                            3061
+                        ],
+                        "block_id": 20,
+                        "block_order": null,
+                        "group_id": 20
+                    },
+                    {
+                        "block_label": "image",
+                        "block_content": "",
+                        "block_bbox": [
+                            3828,
+                            2831,
+                            4035,
+                            3064
+                        ],
+                        "block_id": 21,
+                        "block_order": null,
+                        "group_id": 21
+                    },
+                    {
+                        "block_label": "image",
+                        "block_content": "",
+                        "block_bbox": [
+                            4270,
+                            2834,
+                            4482,
+                            3067
+                        ],
+                        "block_id": 22,
+                        "block_order": null,
+                        "group_id": 22
+                    },
+                    {
+                        "block_label": "image",
+                        "block_content": "",
+                        "block_bbox": [
+                            4712,
+                            2840,
+                            4923,
+                            3070
+                        ],
+                        "block_id": 23,
+                        "block_order": null,
+                        "group_id": 23
+                    },
+                    {
+                        "block_label": "text",
+                        "block_content": "3. 如图，如果  $ \\angle1=120^{\\circ} $  那么  $ \\angle3=(\\quad) $ 。\nA.  $ 120^{\\circ} $  B.  $ 60^{\\circ} $ \nC.  $ 30^{\\circ} $  D.  $ 45^{\\circ} $ ",
+                        "block_bbox": [
+                            3097,
+                            3213,
+                            4567,
+                            3736
+                        ],
+                        "block_id": 24,
+                        "block_order": 17,
+                        "group_id": 24
+                    },
+                    {
+                        "block_label": "image",
+                        "block_content": "",
+                        "block_bbox": [
+                            4937,
+                            3269,
+                            5405,
+                            3631
+                        ],
+                        "block_id": 25,
+                        "block_order": null,
+                        "group_id": 25
+                    },
+                    {
+                        "block_label": "paragraph_title",
+                        "block_content": "四、操作题。(共 10 分)",
+                        "block_bbox": [
+                            3103,
+                            3837,
+                            3962,
+                            3938
+                        ],
+                        "block_id": 26,
+                        "block_order": 18,
+                        "group_id": 26
+                    }
+                ],
+                "layout_det_res": {
+                    "boxes": [
+                        {
+                            "cls_id": 6,
+                            "label": "doc_title",
+                            "score": 0.9721283316612244,
+                            "coordinate": [
+                                358.5477294921875,
+                                358.6017150878906,
+                                2837.80810546875,
+                                689.7113037109375
+                            ]
+                        },
+                        {
+                            "cls_id": 22,
+                            "label": "text",
+                            "score": 0.8270865082740784,
+                            "coordinate": [
+                                1071.931884765625,
+                                742.105712890625,
+                                2068.306396484375,
+                                845.058837890625
+                            ]
+                        },
+                        {
+                            "cls_id": 17,
+                            "label": "paragraph_title",
+                            "score": 0.9531921744346619,
+                            "coordinate": [
+                                129.142822265625,
+                                954.0574951171875,
+                                1397.7327880859375,
+                                1059.5166015625
+                            ]
+                        },
+                        {
+                            "cls_id": 22,
+                            "label": "text",
+                            "score": 0.9700486063957214,
+                            "coordinate": [
+                                131.4736328125,
+                                1165.2923583984375,
+                                2996.71875,
+                                1437.3172607421875
+                            ]
+                        },
+                        {
+                            "cls_id": 22,
+                            "label": "text",
+                            "score": 0.9180788993835449,
+                            "coordinate": [
+                                129.6419677734375,
+                                1538.2470703125,
+                                2197.421875,
+                                1643.40771484375
+                            ]
+                        },
+                        {
+                            "cls_id": 14,
+                            "label": "image",
+                            "score": 0.9542202949523926,
+                            "coordinate": [
+                                1341.830322265625,
+                                1778.79443359375,
+                                1808.972412109375,
+                                2109.183837890625
+                            ]
+                        },
+                        {
+                            "cls_id": 22,
+                            "label": "text",
+                            "score": 0.9843221306800842,
+                            "coordinate": [
+                                128.7802734375,
+                                2239.38916015625,
+                                3008.273193359375,
+                                2677.8984375
+                            ]
+                        },
+                        {
+                            "cls_id": 22,
+                            "label": "text",
+                            "score": 0.9851635098457336,
+                            "coordinate": [
+                                134.94580078125,
+                                2779.78125,
+                                3012.652099609375,
+                                3378.59130859375
+                            ]
+                        },
+                        {
+                            "cls_id": 22,
+                            "label": "text",
+                            "score": 0.9730150699615479,
+                            "coordinate": [
+                                124.3157958984375,
+                                3485.3388671875,
+                                2510.29443359375,
+                                4008.810546875
+                            ]
+                        },
+                        {
+                            "cls_id": 14,
+                            "label": "image",
+                            "score": 0.956654965877533,
+                            "coordinate": [
+                                2592.164306640625,
+                                3466.498291015625,
+                                2925.340087890625,
+                                3686.450927734375
+                            ]
+                        },
+                        {
+                            "cls_id": 22,
+                            "label": "text",
+                            "score": 0.9711650609970093,
+                            "coordinate": [
+                                3085.03076171875,
+                                352.79254150390625,
+                                5355.75927734375,
+                                669.9337158203125
+                            ]
+                        },
+                        {
+                            "cls_id": 14,
+                            "label": "image",
+                            "score": 0.9525081515312195,
+                            "coordinate": [
+                                5404.49853515625,
+                                319.5341796875,
+                                5876.87744140625,
+                                749.4984130859375
+                            ]
+                        },
+                        {
+                            "cls_id": 17,
+                            "label": "paragraph_title",
+                            "score": 0.9489979147911072,
+                            "coordinate": [
+                                3087.84716796875,
+                                768.58544921875,
+                                4317.49658203125,
+                                873.7314453125
+                            ]
+                        },
+                        {
+                            "cls_id": 15,
+                            "label": "inline_formula",
+                            "score": 0.4787254333496094,
+                            "coordinate": [
+                                3103.603515625,
+                                986.6925048828125,
+                                3189.24755859375,
+                                1077.5360107421875
+                            ]
+                        },
+                        {
+                            "cls_id": 22,
+                            "label": "text",
+                            "score": 0.933438241481781,
+                            "coordinate": [
+                                3098.365234375,
+                                977.7740478515625,
+                                4931.2705078125,
+                                1083.4617919921875
+                            ]
+                        },
+                        {
+                            "cls_id": 22,
+                            "label": "text",
+                            "score": 0.9623004794120789,
+                            "coordinate": [
+                                3090.205078125,
+                                1189.606201171875,
+                                5902.7822265625,
+                                1667.425048828125
+                            ]
+                        },
+                        {
+                            "cls_id": 22,
+                            "label": "text",
+                            "score": 0.9291284084320068,
+                            "coordinate": [
+                                3095.6171875,
+                                1771.07568359375,
+                                5677.8818359375,
+                                1877.237548828125
+                            ]
+                        },
+                        {
+                            "cls_id": 17,
+                            "label": "paragraph_title",
+                            "score": 0.9494251608848572,
+                            "coordinate": [
+                                3089.744140625,
+                                1978.43896484375,
+                                4317.05517578125,
+                                2082.682861328125
+                            ]
+                        },
+                        {
+                            "cls_id": 22,
+                            "label": "text",
+                            "score": 0.9672667980194092,
+                            "coordinate": [
+                                3104.25830078125,
+                                2185.81982421875,
+                                5326.91650390625,
+                                2504.10498046875
+                            ]
+                        },
+                        {
+                            "cls_id": 14,
+                            "label": "image",
+                            "score": 0.9497451782226562,
+                            "coordinate": [
+                                5440.37255859375,
+                                2113.349853515625,
+                                5796.90478515625,
+                                2407.220458984375
+                            ]
+                        },
+                        {
+                            "cls_id": 22,
+                            "label": "text",
+                            "score": 0.9445562958717346,
+                            "coordinate": [
+                                3094.30908203125,
+                                2605.7783203125,
+                                4996.87060546875,
+                                2707.9833984375
+                            ]
+                        },
+                        {
+                            "cls_id": 14,
+                            "label": "image",
+                            "score": 0.934593677520752,
+                            "coordinate": [
+                                3386.70068359375,
+                                2824.11669921875,
+                                3594.03564453125,
+                                3061.94384765625
+                            ]
+                        },
+                        {
+                            "cls_id": 14,
+                            "label": "image",
+                            "score": 0.9215538501739502,
+                            "coordinate": [
+                                3828.97021484375,
+                                2831.38525390625,
+                                4035.31591796875,
+                                3064.76904296875
+                            ]
+                        },
+                        {
+                            "cls_id": 14,
+                            "label": "image",
+                            "score": 0.9336633086204529,
+                            "coordinate": [
+                                4270.0400390625,
+                                2834.8076171875,
+                                4482.6240234375,
+                                3067.322265625
+                            ]
+                        },
+                        {
+                            "cls_id": 14,
+                            "label": "image",
+                            "score": 0.930488646030426,
+                            "coordinate": [
+                                4712.3876953125,
+                                2840.14697265625,
+                                4923.9921875,
+                                3070.65380859375
+                            ]
+                        },
+                        {
+                            "cls_id": 15,
+                            "label": "inline_formula",
+                            "score": 0.5441010594367981,
+                            "coordinate": [
+                                3602.290283203125,
+                                3219.957763671875,
+                                3915.453369140625,
+                                3307.567626953125
+                            ]
+                        },
+                        {
+                            "cls_id": 15,
+                            "label": "inline_formula",
+                            "score": 0.7955039143562317,
+                            "coordinate": [
+                                3324.0302734375,
+                                3427.103271484375,
+                                3493.16015625,
+                                3514.931884765625
+                            ]
+                        },
+                        {
+                            "cls_id": 22,
+                            "label": "text",
+                            "score": 0.9645168781280518,
+                            "coordinate": [
+                                3097.39306640625,
+                                3213.041748046875,
+                                4567.54052734375,
+                                3736.724853515625
+                            ]
+                        },
+                        {
+                            "cls_id": 15,
+                            "label": "inline_formula",
+                            "score": 0.7891682982444763,
+                            "coordinate": [
+                                3762.5859375,
+                                3427.433349609375,
+                                3901.04296875,
+                                3511.280029296875
+                            ]
+                        },
+                        {
+                            "cls_id": 15,
+                            "label": "inline_formula",
+                            "score": 0.7844556570053101,
+                            "coordinate": [
+                                3316.58740234375,
+                                3634.035888671875,
+                                3452.28759765625,
+                                3721.846435546875
+                            ]
+                        },
+                        {
+                            "cls_id": 15,
+                            "label": "inline_formula",
+                            "score": 0.7644249796867371,
+                            "coordinate": [
+                                3727.68115234375,
+                                3636.237060546875,
+                                3849.86962890625,
+                                3720.860595703125
+                            ]
+                        },
+                        {
+                            "cls_id": 14,
+                            "label": "image",
+                            "score": 0.9608945846557617,
+                            "coordinate": [
+                                4937.896484375,
+                                3269.1220703125,
+                                5405.552734375,
+                                3631.2158203125
+                            ]
+                        },
+                        {
+                            "cls_id": 17,
+                            "label": "paragraph_title",
+                            "score": 0.9531378149986267,
+                            "coordinate": [
+                                3103.9453125,
+                                3837.11083984375,
+                                3962.0380859375,
+                                3938.50634765625
+                            ]
+                        }
+                    ]
+                }
+            },
+            "markdown": {
+                "text": "# 人教版 2025-2026 学年小学四年级数学上册期末 《图形与几何》专项测试卷\n\n时间:30 分钟 满分:50+5 分\n\n## 一、 填空题。(每空1分，共13分)\n\n1. 学校组织 “冰雪同梦，亚洲同心” 系列活动，早上 8:00 开始，中午 11:30 结束。钟面上时针从 8:00 到 11:30 旋转了（）度。\n\n2. 下图中有( )条线段、( )条直线、( )条射线。\n\n<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_1341_1778_1808_2109.jpg\" alt=\"Image\" width=\"7%\" /></div>\n\n\n3. 一根铁丝正好可以围成一个面积为 100 平方厘米的正方形, 这个正方形的边长是 ( ) 厘米, 现将其改围成一个等腰梯形, 上底是 8 厘米, 下底是 18 厘米, 它的一条腰长 ( ) 厘米。\n\n4. 一棵梭梭树发达的根系可以固定 10 平方米的土地，当它们连成片时，就可以阻挡风沙，牵制沙丘的移动，因此，梭梭树也被称为 “沙漠植被之王”。一片荒漠里种了 125 排梭梭树，每排有 40 棵，这些梭梭树最多可以固定（）公顷的土地。\n\n5. 右面两个正方形的边长分别是 5 厘米和 3 厘米，图中共有（）\n\n个梯形，其中最大的梯形的两条底分别是( )厘米和( )厘米，\n\n高是( )厘米。\n\n6. 如图是用木棍扎成的栅栏图样，图中木棍围成了( )个平行四边形，( )个梯形。\n\n\n\n<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_2592_3466_2925_3686.jpg\" alt=\"Image\" width=\"5%\" /></div>\n\n\n<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_5404_319_5876_749.jpg\" alt=\"Image\" width=\"7%\" /></div>\n\n\n## 二、 判断题。(每题 2 分，共 8 分)\n\n1. 一个钝角剪出的两个角一定都是锐角。（）\n\n2. 把一条 10 厘米长的线段向两端各延长 1 米，得到的是一条直线。（）\n\n3. 一个标准篮球场的面积是 420 平方米，25 个这样的篮球场的面积约为 1 公顷。()\n\n4. 用量角器量角，只要确保  $ 0^{\\circ} $  刻度线与角的一条边重合就行。（）\n\n## 三、 选择题。(每题 2 分，共 6 分)\n\n1. 学校操场上的双杠如右图所示，两两平行的线段有（）组。\n\nA. 3 B. 5 C. 7 D. 8\n\n<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_5440_2113_5796_2407.jpg\" alt=\"Image\" width=\"5%\" /></div>\n\n\n2. 被方框( )遮住一部分的图形可能是平行四边形。\n\n<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_3386_2824_3594_3061.jpg\" alt=\"Image\" width=\"3%\" /></div>\n\n\n<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_3828_2831_4035_3064.jpg\" alt=\"Image\" width=\"3%\" /></div>\n\n\n<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_4270_2834_4482_3067.jpg\" alt=\"Image\" width=\"3%\" /></div>\n\n\n<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_4712_2840_4923_3070.jpg\" alt=\"Image\" width=\"3%\" /></div>\n\n\n3. 如图，如果  $ \\angle1=120^{\\circ} $  那么  $ \\angle3=(\\quad) $ 。\n\nA.  $ 120^{\\circ} $  B.  $ 60^{\\circ} $ \n\nC.  $ 30^{\\circ} $  D.  $ 45^{\\circ} $ \n\n<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_4937_3269_5405_3631.jpg\" alt=\"Image\" width=\"7%\" /></div>\n\n\n## 四、 操作题。(共 10 分)",
+                "images": {
+                    "imgs/img_in_image_box_1341_1778_1808_2109.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl//d502795d-3a24-466d-a366-2addadac48d9/markdown_0/imgs/img_in_image_box_1341_1778_1808_2109.jpg?authorization=bce-auth-v1%2FALTAKzReLNvew3ySINYJ0fuAMN%2F2025-12-24T01%3A56%3A23Z%2F-1%2F%2Fc227ee3571fa2bab14319bda1f2a6d6171092b906988fd908bbd60b52304bfc3",
+                    "imgs/img_in_image_box_2592_3466_2925_3686.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl//d502795d-3a24-466d-a366-2addadac48d9/markdown_0/imgs/img_in_image_box_2592_3466_2925_3686.jpg?authorization=bce-auth-v1%2FALTAKzReLNvew3ySINYJ0fuAMN%2F2025-12-24T01%3A56%3A23Z%2F-1%2F%2F3548f5ce3cebb1888f1d49f6972f6cb4ff73f98fa203a9a9a85da81a470c4437",
+                    "imgs/img_in_image_box_5404_319_5876_749.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl//d502795d-3a24-466d-a366-2addadac48d9/markdown_0/imgs/img_in_image_box_5404_319_5876_749.jpg?authorization=bce-auth-v1%2FALTAKzReLNvew3ySINYJ0fuAMN%2F2025-12-24T01%3A56%3A23Z%2F-1%2F%2Ffcb7e2f29ddfc58aa8402eae86efe072cda53df34b3c810e8069f71c4993f37e",
+                    "imgs/img_in_image_box_5440_2113_5796_2407.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl//d502795d-3a24-466d-a366-2addadac48d9/markdown_0/imgs/img_in_image_box_5440_2113_5796_2407.jpg?authorization=bce-auth-v1%2FALTAKzReLNvew3ySINYJ0fuAMN%2F2025-12-24T01%3A56%3A23Z%2F-1%2F%2F8c393073713d9442405e0582f4c239eb05d4cd15db9142e66e6d5a0329e5b8c0",
+                    "imgs/img_in_image_box_3386_2824_3594_3061.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl//d502795d-3a24-466d-a366-2addadac48d9/markdown_0/imgs/img_in_image_box_3386_2824_3594_3061.jpg?authorization=bce-auth-v1%2FALTAKzReLNvew3ySINYJ0fuAMN%2F2025-12-24T01%3A56%3A23Z%2F-1%2F%2F0d605ebe395d8ccde33b8c9af5f76d928cd5006062c4a210673dc8b1105c2b5d",
+                    "imgs/img_in_image_box_3828_2831_4035_3064.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl//d502795d-3a24-466d-a366-2addadac48d9/markdown_0/imgs/img_in_image_box_3828_2831_4035_3064.jpg?authorization=bce-auth-v1%2FALTAKzReLNvew3ySINYJ0fuAMN%2F2025-12-24T01%3A56%3A23Z%2F-1%2F%2F64d409a3ac70cb8488972781f2f1508b7fc0c2c44065a4cfe6eebd8af58b1151",
+                    "imgs/img_in_image_box_4270_2834_4482_3067.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl//d502795d-3a24-466d-a366-2addadac48d9/markdown_0/imgs/img_in_image_box_4270_2834_4482_3067.jpg?authorization=bce-auth-v1%2FALTAKzReLNvew3ySINYJ0fuAMN%2F2025-12-24T01%3A56%3A23Z%2F-1%2F%2Fed13c9063b2fa87b02ff632bce9031bc439c34e49ba55f67dc75b10bc2ccfa30",
+                    "imgs/img_in_image_box_4712_2840_4923_3070.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl//d502795d-3a24-466d-a366-2addadac48d9/markdown_0/imgs/img_in_image_box_4712_2840_4923_3070.jpg?authorization=bce-auth-v1%2FALTAKzReLNvew3ySINYJ0fuAMN%2F2025-12-24T01%3A56%3A23Z%2F-1%2F%2F2064e619a73b76e747dd4319f5089eab20f99498a3ea05147adf0811f0a70076",
+                    "imgs/img_in_image_box_4937_3269_5405_3631.jpg": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl//d502795d-3a24-466d-a366-2addadac48d9/markdown_0/imgs/img_in_image_box_4937_3269_5405_3631.jpg?authorization=bce-auth-v1%2FALTAKzReLNvew3ySINYJ0fuAMN%2F2025-12-24T01%3A56%3A24Z%2F-1%2F%2F49eb041b7737a717f85873e386f34295dea11c1d6a8404e4305d8e70dc02328f"
+                }
+            },
+            "outputImages": {
+                "layout_det_res": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl//d502795d-3a24-466d-a366-2addadac48d9/layout_det_res_0.jpg?authorization=bce-auth-v1%2FALTAKzReLNvew3ySINYJ0fuAMN%2F2025-12-24T01%3A56%3A25Z%2F-1%2F%2Ffb3e7c1bd155886c7e854389d0a25d31470b46ff3b8e4e985e07ccde86fcb16f",
+                "layout_order_res": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl//d502795d-3a24-466d-a366-2addadac48d9/layout_order_res_0.jpg?authorization=bce-auth-v1%2FALTAKzReLNvew3ySINYJ0fuAMN%2F2025-12-24T01%3A56%3A25Z%2F-1%2F%2Fbc6f07da25ef88c59b90ef17e72931d3f899b0a1db90220bcfecd09e7555a303"
+            },
+            "inputImage": "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl//d502795d-3a24-466d-a366-2addadac48d9/input_img_0.jpg?authorization=bce-auth-v1%2FALTAKzReLNvew3ySINYJ0fuAMN%2F2025-12-24T01%3A56%3A25Z%2F-1%2F%2F32aad9ffdb56e2a40fe5394ac13d2c7c92c661e2968bf86b827c8c0e495eace8"
+        }
+    ],
+    "dataInfo": {
+        "width": 6335,
+        "height": 4475,
+        "type": "image"
+    },
+    "preprocessedImages": [
+        "https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl//d502795d-3a24-466d-a366-2addadac48d9/preprocessed_img_0.jpg?authorization=bce-auth-v1%2FALTAKzReLNvew3ySINYJ0fuAMN%2F2025-12-24T01%3A56%3A25Z%2F-1%2F%2Fc6b62e9ea7ebe740449bd77db41a54fb25336081993b20e2cc2a07cd2b22ef42"
+    ]
+}
