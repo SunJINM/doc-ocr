@@ -584,6 +584,145 @@ class QwenVLAggregator:
             logger.error(f"Qwen-VL 调用失败: {e}")
             raise
 
+class DoubaoVLAggregator:
+    """Doubao-VL 语义聚合器"""
+    
+    # Prompt 模板
+    PROMPT_TEMPLATE = """你是一个智能试卷结构化助手。
+
+**任务**: 这是一个试卷页面，所有的内容块已经被框选并标记了数字 ID。同时我会提供每个 ID 对应的文字内容和类型标签。请根据试卷的**排版空间关系**和**语义逻辑**，将属于**同一道完整题目**的 ID 合并成一组。
+
+**输入内容**:
+```
+{text_context}
+```
+
+**约束条件**:
+1. 标签为 "doc_title" 的块作为文档标题，type 为 "doc_title"
+2. 标签为 "paragraph_title" 的块如果是大题标题（如"一、选择题"），type 为 "header"
+3. **【关键】每道题目必须单独成组，绝对不能将不同题号的题目合并！**
+   - 通过题号识别不同题目（如"1."、"2."、"3."或"第1题"、"第2题"等）
+   - 即使多道题目出现在同一个文本块中，也必须根据题号拆分成独立的 question 组
+   - 一道完整题目可能包含：题干文本 + 选项 + 相关图片/表格
+4. 图片/表格应归属到引用它的题目（通过"如图"、"如下表"等关键词判断）
+5. 图片标题（如"第11题图"、"第12题图"）应归属到对应题号的题目，不要混淆
+6. 标签为 "aside_text"、"number" 的块可以忽略或单独分组，type 为 "aside"
+7. 请确保所有 ID 都被分配到某个组中
+
+**特别注意**:
+- 如果一个文本块包含多道题目（如"1. xxx 2. xxx 3. xxx"），该块只能分配给第一道题目
+- 不同题号的题目绝对不能出现在同一个 question 组的 block_ids 中
+- 每个 question 组应该只对应一道题目
+
+**输出格式**:
+请直接返回 JSON 格式，格式为列表，每个元素包含 `type` 和 `block_ids`。
+
+**输出示例**:
+```json
+[
+  {{"type": "doc_title", "block_ids": [6]}},
+  {{"type": "header", "block_ids": [14]}},
+  {{"type": "question", "block_ids": [16]}},
+  {{"type": "question", "block_ids": [17, 18]}},
+  {{"type": "question", "block_ids": [19]}},
+  {{"type": "aside", "block_ids": [0, 1, 2, 3, 4, 5]}}
+]
+```
+
+请分析图片并返回 JSON 结果："""
+
+    def __init__(self, api_key: str = None, base_url: str = None):
+        self.api_key = api_key or os.getenv("DASHSCOPE_API_KEY", "14ebfc74-500c-46d5-a58b-61ac61341018")
+        self.base_url = base_url or "https://ark.cn-beijing.volces.com/api/v3"
+        
+        if not self.api_key:
+            logger.warning("未设置 DASHSCOPE_API_KEY，Qwen-VL 功能将不可用")
+        
+        self.client = OpenAI(api_key=self.api_key, base_url=self.base_url)
+    
+    @staticmethod
+    def encode_image(image_path: str) -> str:
+        """将图片编码为 Base64"""
+        with open(image_path, "rb") as f:
+            return base64.b64encode(f.read()).decode("utf-8")
+    
+    def build_text_context(self, blocks: List[DetectionBlock], max_text_len: int = 80) -> str:
+        """
+        构建文本上下文
+        
+        Args:
+            blocks: 检测块列表
+            max_text_len: 每个块的最大文本长度（用于节省 Token）
+        """
+        lines = []
+        for block in blocks:
+            text = block.text[:max_text_len] + "..." if len(block.text) > max_text_len else block.text
+            if not text:
+                text = "<空>"
+            lines.append(f"ID {block.id} [{block.label}]: {text}")
+        return "\n".join(lines)
+    
+    def aggregate(
+        self,
+        marked_image_path: str,
+        blocks: List[DetectionBlock],
+        model: str = "qwen-vl-max"
+    ) -> List[Dict]:
+        """
+        使用 Qwen-VL 进行语义聚合
+        
+        Args:
+            marked_image_path: 带标记的图片路径
+            blocks: 检测块列表
+            model: 使用的模型名称
+            
+        Returns:
+            分组结果列表
+        """
+        if not self.api_key:
+            raise ValueError("未设置 DASHSCOPE_API_KEY，无法调用 Qwen-VL")
+        
+        # 构建文本上下文
+        text_context = self.build_text_context(blocks)
+        prompt = self.PROMPT_TEMPLATE.format(text_context=text_context)
+        
+        # 编码图片
+        base64_image = self.encode_image(marked_image_path)
+        
+        logger.info(f"调用 Doubao-VL 模型: {model}")
+        
+        try:
+            response = self.client.chat.completions.create(
+                model=model,
+                messages=[
+                    {
+                        "role": "user",
+                        "content": [
+                            {
+                                "type": "image_url",
+                                "image_url": {"url": f"data:image/png;base64,{base64_image}"}
+                            },
+                            {
+                                "type": "text",
+                                "text": prompt
+                            }
+                        ]
+                    }
+                ]
+            )
+            
+            result_text = response.choices[0].message.content
+            logger.info(f"Doubao-VL 返回: {result_text[:200]}...")
+            
+            # 解析 JSON
+            result_text = result_text.replace("```json", "").replace("```", "").strip()
+            groups = json.loads(result_text)
+            
+            return groups
+            
+        except Exception as e:
+            logger.error(f"Doubao-VL 调用失败: {e}")
+            raise
 
 # ==================== 第四步：后处理合并 ====================
 
@@ -781,7 +920,8 @@ class ExamPaperAnalyzerVL:
         token: str = None,
         api_key: str = None,
         vl_model: str = "qwen-vl-max",
-        enable_ocr_fallback: bool = True
+        enable_ocr_fallback: bool = True,
+        vl_type: str = "doubao"
     ):
         self.vl_model = vl_model
         
@@ -800,7 +940,10 @@ class ExamPaperAnalyzerVL:
             )
         
         self.visual_marker = VisualMarker()
-        self.vl_aggregator = QwenVLAggregator(api_key=api_key)
+        if vl_type == "doubao":
+            self.vl_aggregator = DoubaoVLAggregator()
+        else:
+            self.vl_aggregator = QwenVLAggregator(api_key=api_key)
         self.post_processor = PostProcessor()
     
     def analyze(
@@ -865,7 +1008,7 @@ class ExamPaperAnalyzerVL:
         self.visual_marker.draw_marks(image_path, blocks, marked_image_path)
         
         # Step 3: VL 语义聚合
-        logger.info("\n[Step 3] Qwen-VL 语义聚合...")
+        logger.info("\n[Step 3] VL 语义聚合...")
         groups = self.vl_aggregator.aggregate(marked_image_path, blocks, self.vl_model)
         
         # Step 4: 后处理
@@ -973,10 +1116,10 @@ class ExamPaperAnalyzerVL:
 def main():
     """测试主函数"""
     # 配置
-    IMAGE_PATH = r"D:\WorkProjects\doc-ocr\input\1.png"
+    IMAGE_PATH = r"D:\WorkProjects\doc-ocr\input\mifeng_doubao_1.jpg"
     # IMAGE_PATH = r"D:\software\downloads\package\d67393df-2739-42ab-abe2-afa281e7e350.png"
     OUTPUT_DIR = "./output/exam_analysis_vl"
-    VL_MODEL = "qwen-vl-max"  # 或 "qwen-vl-plus"
+    VL_MODEL = "ep-20251025164648-d66ns"  # 或 "qwen-vl-plus"
     
     # 检查图片是否存在
     if not os.path.exists(IMAGE_PATH):
@@ -985,7 +1128,7 @@ def main():
         return
     
     # 创建分析器
-    analyzer = ExamPaperAnalyzerVL(vl_model=VL_MODEL)
+    analyzer = ExamPaperAnalyzerVL(vl_model=VL_MODEL, vl_type="qwen")
     
     # 执行分析
     result = analyzer.analyze(

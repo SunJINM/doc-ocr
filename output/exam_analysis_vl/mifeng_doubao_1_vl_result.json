@@ -1,0 +1,718 @@
+{
+  "image_size": {
+    "width": 2866,
+    "height": 2023
+  },
+  "marked_image": "./output/exam_analysis_vl\\mifeng_doubao_1_vl_marked.jpg",
+  "blocks": [
+    {
+      "id": 0,
+      "bbox": [
+        5,
+        588,
+        40,
+        971
+      ],
+      "text": "灶台：___",
+      "label": "aside_text",
+      "block_order": null,
+      "group_id": 0
+    },
+    {
+      "id": 1,
+      "bbox": [
+        168,
+        87,
+        1332,
+        181
+      ],
+      "text": "六年级上册数学拔尖测试卷人教版",
+      "label": "doc_title",
+      "block_order": 1,
+      "group_id": 1
+    },
+    {
+      "id": 2,
+      "bbox": [
+        510,
+        209,
+        988,
+        289
+      ],
+      "text": "(月考测试卷一)",
+      "label": "doc_title",
+      "block_order": 2,
+      "group_id": 2
+    },
+    {
+      "id": 3,
+      "bbox": [
+        982,
+        193,
+        1371,
+        225
+      ],
+      "text": "关注公众号【桃子麻麻资料库】+微9238562",
+      "label": "text",
+      "block_order": 3,
+      "group_id": 3
+    },
+    {
+      "id": 4,
+      "bbox": [
+        931,
+        331,
+        1341,
+        375
+      ],
+      "text": "时间：60分钟 满分：100分",
+      "label": "text",
+      "block_order": 4,
+      "group_id": 4
+    },
+    {
+      "id": 5,
+      "bbox": [
+        164,
+        369,
+        1343,
+        508
+      ],
+      "text": "<table><tr><td>题号</td><td>一</td><td>二</td><td>三</td><td>四</td><td>五</td><td>六</td><td>总分</td></tr><tr><td>得分</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>",
+      "label": "table",
+      "block_order": null,
+      "group_id": 5
+    },
+    {
+      "id": 6,
+      "bbox": [
+        142,
+        517,
+        559,
+        556
+      ],
+      "text": "一、小小填空，奥秘多。(26分)",
+      "label": "paragraph_title",
+      "block_order": 5,
+      "group_id": 6
+    },
+    {
+      "id": 7,
+      "bbox": [
+        196,
+        557,
+        887,
+        657
+      ],
+      "text": "$1. \\frac{4}{9} + \\frac{4}{9} + \\frac{4}{9} + \\frac{4}{9} = (\\frac{4}{9}) \\times (\\frac{4}{9}) = (\\frac{16}{9})$",
+      "label": "text",
+      "block_order": 6,
+      "group_id": 7
+    },
+    {
+      "id": 8,
+      "bbox": [
+        184,
+        656,
+        1243,
+        797
+      ],
+      "text": "2.一个正方形的边长是$\\frac{1}{5}$米，它的周长是(4)米，它的面积是($\\frac{1}{25}$)平方米。",
+      "label": "text",
+      "block_order": 7,
+      "group_id": 8
+    },
+    {
+      "id": 9,
+      "bbox": [
+        185,
+        791,
+        943,
+        1043
+      ],
+      "text": "3.右图用乘法算式表示是$(\\frac{2}{3}) \\times (\\frac{2}{5}) = (\\frac{4}{15})$。 4. $\\frac{5}{12}$时$=(\\boxed{25})$分 $\\frac{7}{20}$米$=(\\boxed{35})$厘米 $\\frac{4}{25}$吨$=(\\boxed{160})$千克 $\\frac{2}{5}m^3=(\\boxed{400})dm^3$",
+      "label": "text",
+      "block_order": 8,
+      "group_id": 8
+    },
+    {
+      "id": 10,
+      "bbox": [
+        187,
+        1041,
+        1247,
+        1173
+      ],
+      "text": "5.把7m长的绳子平均分成8段,每段是这根绳子的(\\frac{1}{8}),每段长(\\frac{7}{8})m。(填分数)",
+      "label": "text",
+      "block_order": 9,
+      "group_id": 8
+    },
+    {
+      "id": 11,
+      "bbox": [
+        179,
+        1185,
+        1245,
+        1374
+      ],
+      "text": "6.一根铁丝，已经用去$\\frac{2}{5}$，应该把（铁丝）看作单位“1”；等量关系式是：（1）×（$\\frac{2}{5}$）=（$\\frac{2}{5}$用去了的）。",
+      "label": "text",
+      "block_order": 10,
+      "group_id": 8
+    },
+    {
+      "id": 12,
+      "bbox": [
+        998,
+        825,
+        1243,
+        956
+      ],
+      "text": "",
+      "label": "image",
+      "block_order": null,
+      "group_id": 12
+    },
+    {
+      "id": 13,
+      "bbox": [
+        563,
+        1394,
+        906,
+        1645
+      ],
+      "text": "",
+      "label": "image",
+      "block_order": null,
+      "group_id": 13
+    },
+    {
+      "id": 14,
+      "bbox": [
+        212,
+        1654,
+        1251,
+        1944
+      ],
+      "text": "体育馆在学校的（北）偏（西）（25°）度方向，距离是（900）米；新华书店在学校的（南）偏（西）（10°）度方向，距离是（300）米；李小旭家在学校的（东）偏（南）（15°）度方向，距离是（1200）米；百货大楼在学校的（东）偏（北）（40°）度方向，距离是（600）米。",
+      "label": "text",
+      "block_order": 11,
+      "group_id": 14
+    },
+    {
+      "id": 15,
+      "bbox": [
+        1528,
+        136,
+        2262,
+        177
+      ],
+      "text": "二、我是数学小法官。(对的打“√”，错的打“×”)(5分)",
+      "label": "paragraph_title",
+      "block_order": 12,
+      "group_id": 15
+    },
+    {
+      "id": 16,
+      "bbox": [
+        1558,
+        158,
+        2632,
+        601
+      ],
+      "text": "1. \\(\\frac{3}{8} + \\frac{5}{8} \\times \\frac{3}{4} = 1 \\times \\frac{3}{4} = \\frac{3}{4}\\) （×） 2. 一根电线长5m，用去\\(\\frac{2}{5}\\)后，还剩下\\(\\frac{3}{5}\\)m。（×） 3. 一个数（0除外）乘以真分数，积一定小于这个数。（√） 4. 有两根2米长的铁丝，第一根用去\\(\\frac{1}{4}\\)，第二根用去\\(\\frac{1}{4}\\)米，剩下的一样长。（×） 5. 整数乘法的运算定律与分数乘法的运算定律不同。（×）",
+      "label": "text",
+      "block_order": 13,
+      "group_id": 16
+    },
+    {
+      "id": 17,
+      "bbox": [
+        1534,
+        622,
+        2251,
+        664
+      ],
+      "text": "三、轻松选择。(将正确答案的序号填在括号里)(5分)",
+      "label": "paragraph_title",
+      "block_order": 14,
+      "group_id": 17
+    },
+    {
+      "id": 18,
+      "bbox": [
+        1577,
+        694,
+        2342,
+        832
+      ],
+      "text": "1.“山羊只数是绵羊只数的\\frac{1}{2}”，是把( B )看作单位“1”。 A.山羊只数 B.绵羊只数 C.羊的总数",
+      "label": "text",
+      "block_order": 15,
+      "group_id": 18
+    },
+    {
+      "id": 19,
+      "bbox": [
+        1576,
+        855,
+        2489,
+        1025
+      ],
+      "text": "2.一块长方形菜地的长是24m,宽是长的$\\frac{3}{4}$,求面积的算式是(C)。 24×$\\frac{3}{4}$=18(m) A. $24 \\times \\frac{3}{4}$ B. $24 \\times \\frac{3}{4} + 24$ C. $24 \\times \\left(24 \\times \\frac{3}{4}\\right)$",
+      "label": "text",
+      "block_order": 16,
+      "group_id": 19
+    },
+    {
+      "id": 20,
+      "bbox": [
+        1576,
+        1026,
+        2696,
+        1190
+      ],
+      "text": "3.把一根绳子分成两段,第一段占全长的$\\frac{5}{8}$,第二段长$\\frac{5}{8}$米,两段绳子相比,(A)。",
+      "label": "text",
+      "block_order": 17,
+      "group_id": 20
+    },
+    {
+      "id": 21,
+      "bbox": [
+        1577,
+        1196,
+        2051,
+        1271
+      ],
+      "text": "4.如图,小红看小娟在(A)方向。",
+      "label": "text",
+      "block_order": 18,
+      "group_id": 21
+    },
+    {
+      "id": 22,
+      "bbox": [
+        2034,
+        1274,
+        2209,
+        1418
+      ],
+      "text": "",
+      "label": "image",
+      "block_order": null,
+      "group_id": 22
+    },
+    {
+      "id": 23,
+      "bbox": [
+        1612,
+        1433,
+        2368,
+        1479
+      ],
+      "text": "A.北偏东55° B.东偏北55° C.西偏南35°",
+      "label": "text",
+      "block_order": 19,
+      "group_id": 23
+    },
+    {
+      "id": 24,
+      "bbox": [
+        1574,
+        1494,
+        2671,
+        1675
+      ],
+      "text": "5.一种洗衣机先涨价$\\frac{1}{10}$，再降价$\\frac{1}{10}$，现价和原价相比，（A）。$1 \\times (1 + \\frac{1}{10}) \\times (1 - \\frac{1}{10})$ $= \\frac{11}{10} \\times \\frac{9}{10}$ $= \\frac{99}{100}$。A.便宜了 B.贵了 C.价格不变",
+      "label": "text",
+      "block_order": 20,
+      "group_id": 24
+    },
+    {
+      "id": 25,
+      "bbox": [
+        1540,
+        1661,
+        1813,
+        1700
+      ],
+      "text": "四、计算题。(24分)",
+      "label": "paragraph_title",
+      "block_order": 21,
+      "group_id": 25
+    },
+    {
+      "id": 26,
+      "bbox": [
+        1579,
+        1728,
+        2599,
+        1969
+      ],
+      "text": "1.直接写得数。(4分)  $\\frac{5}{9} \\times 15 =$  $\\frac{3}{5} \\times 2 =$  $\\frac{1}{4} \\times \\frac{4}{5} =$  $\\frac{1}{9} \\times \\frac{3}{7} =$  $\\frac{3}{4} \\times \\frac{1}{5} =$  $\\frac{6}{11} \\times \\frac{1}{12} =$  $\\frac{3}{22} \\times \\frac{11}{13} =$  $28 \\times \\frac{7}{24} =$",
+      "label": "text",
+      "block_order": 22,
+      "group_id": 26
+    }
+  ],
+  "question_groups": [
+    {
+      "type": "doc_title",
+      "block_ids": [
+        1,
+        2
+      ],
+      "merged_bbox": [
+        168,
+        87,
+        1332,
+        289
+      ],
+      "merged_text": "六年级上册数学拔尖测试卷人教版 (月考测试卷一)"
+    },
+    {
+      "type": "header",
+      "block_ids": [
+        6
+      ],
+      "merged_bbox": [
+        142,
+        517,
+        559,
+        556
+      ],
+      "merged_text": "一、小小填空，奥秘多。(26分)"
+    },
+    {
+      "type": "question",
+      "block_ids": [
+        7
+      ],
+      "merged_bbox": [
+        196,
+        557,
+        887,
+        657
+      ],
+      "merged_text": "$1. \\frac{4}{9} + \\frac{4}{9} + \\frac{4}{9} + \\frac{4}{9} = (\\frac{4}{9}) \\times (\\frac{4}{9}) = (\\frac{16}{9})$"
+    },
+    {
+      "type": "question",
+      "block_ids": [
+        8
+      ],
+      "merged_bbox": [
+        184,
+        656,
+        1243,
+        797
+      ],
+      "merged_text": "2.一个正方形的边长是$\\frac{1}{5}$米，它的周长是(4)米，它的面积是($\\frac{1}{25}$)平方米。"
+    },
+    {
+      "type": "question",
+      "block_ids": [
+        9,
+        12
+      ],
+      "merged_bbox": [
+        185,
+        791,
+        1243,
+        1043
+      ],
+      "merged_text": "3.右图用乘法算式表示是$(\\frac{2}{3}) \\times (\\frac{2}{5}) = (\\frac{4}{15})$。 4. $\\frac{5}{12}$时$=(\\boxed{25})$分 $\\frac{7}{20}$米$=(\\boxed{35})$厘米 $\\frac{4}{25}$吨$=(\\boxed{160})$千克 $\\frac{2}{5}m^3=(\\boxed{400})dm^3$"
+    },
+    {
+      "type": "question",
+      "block_ids": [
+        9
+      ],
+      "merged_bbox": [
+        185,
+        791,
+        943,
+        1043
+      ],
+      "merged_text": "3.右图用乘法算式表示是$(\\frac{2}{3}) \\times (\\frac{2}{5}) = (\\frac{4}{15})$。 4. $\\frac{5}{12}$时$=(\\boxed{25})$分 $\\frac{7}{20}$米$=(\\boxed{35})$厘米 $\\frac{4}{25}$吨$=(\\boxed{160})$千克 $\\frac{2}{5}m^3=(\\boxed{400})dm^3$"
+    },
+    {
+      "type": "question",
+      "block_ids": [
+        10
+      ],
+      "merged_bbox": [
+        187,
+        1041,
+        1247,
+        1173
+      ],
+      "merged_text": "5.把7m长的绳子平均分成8段,每段是这根绳子的(\\frac{1}{8}),每段长(\\frac{7}{8})m。(填分数)"
+    },
+    {
+      "type": "question",
+      "block_ids": [
+        11
+      ],
+      "merged_bbox": [
+        179,
+        1185,
+        1245,
+        1374
+      ],
+      "merged_text": "6.一根铁丝，已经用去$\\frac{2}{5}$，应该把（铁丝）看作单位“1”；等量关系式是：（1）×（$\\frac{2}{5}$）=（$\\frac{2}{5}$用去了的）。"
+    },
+    {
+      "type": "question",
+      "block_ids": [
+        14,
+        13
+      ],
+      "merged_bbox": [
+        212,
+        1394,
+        1251,
+        1944
+      ],
+      "merged_text": "体育馆在学校的（北）偏（西）（25°）度方向，距离是（900）米；新华书店在学校的（南）偏（西）（10°）度方向，距离是（300）米；李小旭家在学校的（东）偏（南）（15°）度方向，距离是（1200）米；百货大楼在学校的（东）偏（北）（40°）度方向，距离是（600）米。"
+    },
+    {
+      "type": "header",
+      "block_ids": [
+        15
+      ],
+      "merged_bbox": [
+        1528,
+        136,
+        2262,
+        177
+      ],
+      "merged_text": "二、我是数学小法官。(对的打“√”，错的打“×”)(5分)"
+    },
+    {
+      "type": "question",
+      "block_ids": [
+        16
+      ],
+      "merged_bbox": [
+        1558,
+        158,
+        2632,
+        601
+      ],
+      "merged_text": "1. \\(\\frac{3}{8} + \\frac{5}{8} \\times \\frac{3}{4} = 1 \\times \\frac{3}{4} = \\frac{3}{4}\\) （×） 2. 一根电线长5m，用去\\(\\frac{2}{5}\\)后，还剩下\\(\\frac{3}{5}\\)m。（×） 3. 一个数（0除外）乘以真分数，积一定小于这个数。（√） 4. 有两根2米长的铁丝，第一根用去\\(\\frac{1}{4}\\)，第二根用去\\(\\frac{1}{4}\\)米，剩下的一样长。（×） 5. 整数乘法的运算定律与分数乘法的运算定律不同。（×）"
+    },
+    {
+      "type": "question",
+      "block_ids": [
+        16
+      ],
+      "merged_bbox": [
+        1558,
+        158,
+        2632,
+        601
+      ],
+      "merged_text": "1. \\(\\frac{3}{8} + \\frac{5}{8} \\times \\frac{3}{4} = 1 \\times \\frac{3}{4} = \\frac{3}{4}\\) （×） 2. 一根电线长5m，用去\\(\\frac{2}{5}\\)后，还剩下\\(\\frac{3}{5}\\)m。（×） 3. 一个数（0除外）乘以真分数，积一定小于这个数。（√） 4. 有两根2米长的铁丝，第一根用去\\(\\frac{1}{4}\\)，第二根用去\\(\\frac{1}{4}\\)米，剩下的一样长。（×） 5. 整数乘法的运算定律与分数乘法的运算定律不同。（×）"
+    },
+    {
+      "type": "question",
+      "block_ids": [
+        16
+      ],
+      "merged_bbox": [
+        1558,
+        158,
+        2632,
+        601
+      ],
+      "merged_text": "1. \\(\\frac{3}{8} + \\frac{5}{8} \\times \\frac{3}{4} = 1 \\times \\frac{3}{4} = \\frac{3}{4}\\) （×） 2. 一根电线长5m，用去\\(\\frac{2}{5}\\)后，还剩下\\(\\frac{3}{5}\\)m。（×） 3. 一个数（0除外）乘以真分数，积一定小于这个数。（√） 4. 有两根2米长的铁丝，第一根用去\\(\\frac{1}{4}\\)，第二根用去\\(\\frac{1}{4}\\)米，剩下的一样长。（×） 5. 整数乘法的运算定律与分数乘法的运算定律不同。（×）"
+    },
+    {
+      "type": "question",
+      "block_ids": [
+        16
+      ],
+      "merged_bbox": [
+        1558,
+        158,
+        2632,
+        601
+      ],
+      "merged_text": "1. \\(\\frac{3}{8} + \\frac{5}{8} \\times \\frac{3}{4} = 1 \\times \\frac{3}{4} = \\frac{3}{4}\\) （×） 2. 一根电线长5m，用去\\(\\frac{2}{5}\\)后，还剩下\\(\\frac{3}{5}\\)m。（×） 3. 一个数（0除外）乘以真分数，积一定小于这个数。（√） 4. 有两根2米长的铁丝，第一根用去\\(\\frac{1}{4}\\)，第二根用去\\(\\frac{1}{4}\\)米，剩下的一样长。（×） 5. 整数乘法的运算定律与分数乘法的运算定律不同。（×）"
+    },
+    {
+      "type": "question",
+      "block_ids": [
+        16
+      ],
+      "merged_bbox": [
+        1558,
+        158,
+        2632,
+        601
+      ],
+      "merged_text": "1. \\(\\frac{3}{8} + \\frac{5}{8} \\times \\frac{3}{4} = 1 \\times \\frac{3}{4} = \\frac{3}{4}\\) （×） 2. 一根电线长5m，用去\\(\\frac{2}{5}\\)后，还剩下\\(\\frac{3}{5}\\)m。（×） 3. 一个数（0除外）乘以真分数，积一定小于这个数。（√） 4. 有两根2米长的铁丝，第一根用去\\(\\frac{1}{4}\\)，第二根用去\\(\\frac{1}{4}\\)米，剩下的一样长。（×） 5. 整数乘法的运算定律与分数乘法的运算定律不同。（×）"
+    },
+    {
+      "type": "header",
+      "block_ids": [
+        17
+      ],
+      "merged_bbox": [
+        1534,
+        622,
+        2251,
+        664
+      ],
+      "merged_text": "三、轻松选择。(将正确答案的序号填在括号里)(5分)"
+    },
+    {
+      "type": "question",
+      "block_ids": [
+        18
+      ],
+      "merged_bbox": [
+        1577,
+        694,
+        2342,
+        832
+      ],
+      "merged_text": "1.“山羊只数是绵羊只数的\\frac{1}{2}”，是把( B )看作单位“1”。 A.山羊只数 B.绵羊只数 C.羊的总数"
+    },
+    {
+      "type": "question",
+      "block_ids": [
+        19
+      ],
+      "merged_bbox": [
+        1576,
+        855,
+        2489,
+        1025
+      ],
+      "merged_text": "2.一块长方形菜地的长是24m,宽是长的$\\frac{3}{4}$,求面积的算式是(C)。 24×$\\frac{3}{4}$=18(m) A. $24 \\times \\frac{3}{4}$ B. $24 \\times \\frac{3}{4} + 24$ C. $24 \\times \\left(24 \\times \\frac{3}{4}\\right)$"
+    },
+    {
+      "type": "question",
+      "block_ids": [
+        20
+      ],
+      "merged_bbox": [
+        1576,
+        1026,
+        2696,
+        1190
+      ],
+      "merged_text": "3.把一根绳子分成两段,第一段占全长的$\\frac{5}{8}$,第二段长$\\frac{5}{8}$米,两段绳子相比,(A)。"
+    },
+    {
+      "type": "question",
+      "block_ids": [
+        21,
+        22,
+        23
+      ],
+      "merged_bbox": [
+        1577,
+        1196,
+        2368,
+        1479
+      ],
+      "merged_text": "4.如图,小红看小娟在(A)方向。 A.北偏东55° B.东偏北55° C.西偏南35°"
+    },
+    {
+      "type": "question",
+      "block_ids": [
+        24
+      ],
+      "merged_bbox": [
+        1574,
+        1494,
+        2671,
+        1675
+      ],
+      "merged_text": "5.一种洗衣机先涨价$\\frac{1}{10}$，再降价$\\frac{1}{10}$，现价和原价相比，（A）。$1 \\times (1 + \\frac{1}{10}) \\times (1 - \\frac{1}{10})$ $= \\frac{11}{10} \\times \\frac{9}{10}$ $= \\frac{99}{100}$。A.便宜了 B.贵了 C.价格不变"
+    },
+    {
+      "type": "header",
+      "block_ids": [
+        25
+      ],
+      "merged_bbox": [
+        1540,
+        1661,
+        1813,
+        1700
+      ],
+      "merged_text": "四、计算题。(24分)"
+    },
+    {
+      "type": "question",
+      "block_ids": [
+        26
+      ],
+      "merged_bbox": [
+        1579,
+        1728,
+        2599,
+        1969
+      ],
+      "merged_text": "1.直接写得数。(4分)  $\\frac{5}{9} \\times 15 =$  $\\frac{3}{5} \\times 2 =$  $\\frac{1}{4} \\times \\frac{4}{5} =$  $\\frac{1}{9} \\times \\frac{3}{7} =$  $\\frac{3}{4} \\times \\frac{1}{5} =$  $\\frac{6}{11} \\times \\frac{1}{12} =$  $\\frac{3}{22} \\times \\frac{11}{13} =$  $28 \\times \\frac{7}{24} =$"
+    },
+    {
+      "type": "aside",
+      "block_ids": [
+        0
+      ],
+      "merged_bbox": [
+        5,
+        588,
+        40,
+        971
+      ],
+      "merged_text": "灶台：___"
+    },
+    {
+      "type": "aside",
+      "block_ids": [
+        3
+      ],
+      "merged_bbox": [
+        982,
+        193,
+        1371,
+        225
+      ],
+      "merged_text": "关注公众号【桃子麻麻资料库】+微9238562"
+    },
+    {
+      "type": "aside",
+      "block_ids": [
+        4
+      ],
+      "merged_bbox": [
+        931,
+        331,
+        1341,
+        375
+      ],
+      "merged_text": "时间：60分钟 满分：100分"
+    },
+    {
+      "type": "aside",
+      "block_ids": [
+        5
+      ],
+      "merged_bbox": [
+        164,
+        369,
+        1343,
+        508
+      ],
+      "merged_text": "<table><tr><td>题号</td><td>一</td><td>二</td><td>三</td><td>四</td><td>五</td><td>六</td><td>总分</td></tr><tr><td>得分</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>"
+    }
+  ]
+}
