@@ -183,3 +183,4 @@ CLAUDE.md
 tmp/
 claudedocs
 migration_data
+cache

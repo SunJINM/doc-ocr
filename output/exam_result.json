@@ -1,0 +1,408 @@
+{
+  "paper_info": {
+    "total_questions": 14
+  },
+  "questions": [
+    {
+      "question_id": 1,
+      "question_type": "填空题",
+      "question_text": "学校组织“冰雪同梦，亚洲同心”系列活动，早上8：00开始，中午11：30结束。钟面上时针从8:00到11:30旋转了( )度。",
+      "question_bboxes": [
+        [
+          23,
+          233,
+          443,
+          293
+        ]
+      ],
+      "blanks": [
+        {
+          "blank_id": 1,
+          "blank_bbox": [
+            233,
+            243,
+            263,
+            273
+          ],
+          "blank_type": "小括号"
+        }
+      ]
+    },
+    {
+      "question_id": 2,
+      "question_type": "填空题",
+      "question_text": "下图中有( )条线段、( )条直线、( )条射线。（图：A、B在水平直线，C与B连线的图形）",
+      "question_bboxes": [
+        [
+          23,
+          323,
+          323,
+          363
+        ],
+        [
+          203,
+          383,
+          283,
+          453
+        ]
+      ],
+      "blanks": [
+        {
+          "blank_id": 1,
+          "blank_bbox": [
+            193,
+            333,
+            223,
+            363
+          ],
+          "blank_type": "小括号"
+        },
+        {
+          "blank_id": 2,
+          "blank_bbox": [
+            303,
+            333,
+            333,
+            363
+          ],
+          "blank_type": "小括号"
+        },
+        {
+          "blank_id": 3,
+          "blank_bbox": [
+            383,
+            333,
+            413,
+            363
+          ],
+          "blank_type": "小括号"
+        }
+      ]
+    },
+    {
+      "question_id": 3,
+      "question_type": "填空题",
+      "question_text": "一根铁丝正好可以围成一个面积为100平方厘米的正方形，这个正方形的边长是( )厘米，现将其改围成一个等腰梯形，上底是8厘米，下底是18厘米，它的一条腰长( )厘米。",
+      "question_bboxes": [
+        [
+          23,
+          403,
+          463,
+          503
+        ]
+      ],
+      "blanks": [
+        {
+          "blank_id": 1,
+          "blank_bbox": [
+            193,
+            413,
+            223,
+            443
+          ],
+          "blank_type": "小括号"
+        },
+        {
+          "blank_id": 2,
+          "blank_bbox": [
+            233,
+            473,
+            263,
+            503
+          ],
+          "blank_type": "小括号"
+        }
+      ]
+    },
+    {
+      "question_id": 4,
+      "question_type": "填空题",
+      "question_text": "一棵梭梭树发达的根系可以固定10平方米的土地，当它们连成片时，就可以阻挡风沙，牵制沙丘的移动，因此，梭梭树也被称为“沙漠植被之王”。一片荒漠里种了125排梭梭树，每排有40棵，这些梭梭树最多可以固定( )公顷的土地。",
+      "question_bboxes": [
+        [
+          23,
+          543,
+          463,
+          643
+        ]
+      ],
+      "blanks": [
+        {
+          "blank_id": 1,
+          "blank_bbox": [
+            383,
+            553,
+            413,
+            583
+          ],
+          "blank_type": "小括号"
+        }
+      ]
+    },
+    {
+      "question_id": 5,
+      "question_type": "填空题",
+      "question_text": "右面两个正方形的边长分别是5厘米和3厘米，图中共有( )个梯形，其中最大的梯形的两条底分别是( )厘米和( )厘米，高是( )厘米。（图：两个正方形部分重叠的图形）",
+      "question_bboxes": [
+        [
+          23,
+          783,
+          463,
+          903
+        ],
+        [
+          403,
+          773,
+          463,
+          823
+        ]
+      ],
+      "blanks": [
+        {
+          "blank_id": 1,
+          "blank_bbox": [
+            303,
+            793,
+            333,
+            823
+          ],
+          "blank_type": "小括号"
+        },
+        {
+          "blank_id": 2,
+          "blank_bbox": [
+            583,
+            803,
+            613,
+            833
+          ],
+          "blank_type": "小括号"
+        },
+        {
+          "blank_id": 3,
+          "blank_bbox": [
+            703,
+            803,
+            733,
+            833
+          ],
+          "blank_type": "小括号"
+        },
+        {
+          "blank_id": 4,
+          "blank_bbox": [
+            233,
+            873,
+            263,
+            903
+          ],
+          "blank_type": "小括号"
+        }
+      ]
+    },
+    {
+      "question_id": 6,
+      "question_type": "填空题",
+      "question_text": "如图是用木棍扎成的栅栏图样，图中木棍围成了( )个平行四边形，( )个梯形。（图：栅栏交叉的图形）",
+      "question_bboxes": [
+        [
+          493,
+          73,
+          833,
+          153
+        ],
+        [
+          853,
+          73,
+          923,
+          153
+        ]
+      ],
+      "blanks": [
+        {
+          "blank_id": 1,
+          "blank_bbox": [
+            793,
+            83,
+            823,
+            113
+          ],
+          "blank_type": "小括号"
+        },
+        {
+          "blank_id": 2,
+          "blank_bbox": [
+            573,
+            123,
+            603,
+            153
+          ],
+          "blank_type": "小括号"
+        }
+      ]
+    },
+    {
+      "question_id": 7,
+      "question_type": "判断题",
+      "question_text": "一个钝角剪出的两个角一定都是锐角。 ( )",
+      "question_bboxes": [
+        [
+          493,
+          203,
+          853,
+          243
+        ]
+      ],
+      "blanks": []
+    },
+    {
+      "question_id": 8,
+      "question_type": "判断题",
+      "question_text": "把一条10厘米长的线段向两端各延长1米，得到的是一条直线。 ( )",
+      "question_bboxes": [
+        [
+          493,
+          263,
+          853,
+          303
+        ]
+      ],
+      "blanks": []
+    },
+    {
+      "question_id": 9,
+      "question_type": "判断题",
+      "question_text": "一个标准篮球场的面积是420平方米，25个这样的篮球场的面积约为1公顷。 ( )",
+      "question_bboxes": [
+        [
+          493,
+          323,
+          853,
+          403
+        ]
+      ],
+      "blanks": []
+    },
+    {
+      "question_id": 10,
+      "question_type": "判断题",
+      "question_text": "用量角器量角，只要确保0°刻度线与角的一条边重合就行。( )",
+      "question_bboxes": [
+        [
+          493,
+          423,
+          853,
+          463
+        ]
+      ],
+      "blanks": []
+    },
+    {
+      "question_id": 11,
+      "question_type": "选择题",
+      "question_text": "学校操场上的双杠如右图所示，两两平行的线段有( )组。A. 3  B. 5  C. 7  D.8（图：双杠的图形）",
+      "question_bboxes": [
+        [
+          493,
+          483,
+          853,
+          563
+        ],
+        [
+          853,
+          433,
+          923,
+          503
+        ]
+      ],
+      "blanks": [
+        {
+          "blank_id": 1,
+          "blank_bbox": [
+            813,
+            493,
+            843,
+            523
+          ],
+          "blank_type": "小括号"
+        }
+      ]
+    },
+    {
+      "question_id": 12,
+      "question_type": "选择题",
+      "question_text": "被方框( )遮住一部分的图形可能是平行四边形。（图：四个被方框遮挡的图形）选项：A、B、C、D的图。",
+      "question_bboxes": [
+        [
+          493,
+          623,
+          853,
+          663
+        ],
+        [
+          523,
+          713,
+          783,
+          773
+        ]
+      ],
+      "blanks": [
+        {
+          "blank_id": 1,
+          "blank_bbox": [
+            573,
+            633,
+            603,
+            663
+          ],
+          "blank_type": "小括号"
+        }
+      ]
+    },
+    {
+      "question_id": 13,
+      "question_type": "选择题",
+      "question_text": "如图，如果∠1=120°那么∠3=( )。（图：两个长方形交叉的角的图形）选项：A. 120°  B. 60°  C. 30°  D.45°",
+      "question_bboxes": [
+        [
+          493,
+          783,
+          853,
+          863
+        ],
+        [
+          793,
+          813,
+          863,
+          873
+        ]
+      ],
+      "blanks": [
+        {
+          "blank_id": 1,
+          "blank_bbox": [
+            813,
+            793,
+            843,
+            823
+          ],
+          "blank_type": "小括号"
+        }
+      ]
+    },
+    {
+      "question_id": 14,
+      "question_type": "操作题",
+      "question_text": "四、操作题。(共10分)",
+      "question_bboxes": [
+        [
+          493,
+          923,
+          653,
+          963
+        ]
+      ],
+      "blanks": []
+    }
+  ]
+}
