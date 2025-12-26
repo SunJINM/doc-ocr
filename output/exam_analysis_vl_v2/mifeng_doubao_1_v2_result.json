@@ -117,23 +117,36 @@
         1243,
         797
       ],
-      "text": "2.一个正方形的边长是$\\frac{1}{5}$米，它的周长是（4）米，它的面积是（$\\frac{1}{25}$）平方米。",
+      "text": "2.一个正方形的边长是$\\frac{1}{5}$米，它的周长是(4)米，它的面积是($\\frac{1}{25}$)平方米。",
       "label": "text",
       "question_number": null,
       "split_from_merged": false
     },
     {
-      "id": 9,
+      "id": 900,
       "bbox": [
         185,
-        791,
+        813,
+        943,
+        894
+      ],
+      "text": "3.右图用乘法算式表示是$(\\frac{2}{3}) \\times (\\frac{2}{5}) = (\\frac{4}{15})$。",
+      "label": "text",
+      "question_number": 3,
+      "split_from_merged": true
+    },
+    {
+      "id": 901,
+      "bbox": [
+        185,
+        894,
         943,
         1043
       ],
-      "text": "3.右图用乘法算式表示是$(\\frac{2}{3}) \\times (\\frac{2}{5}) = (\\frac{4}{15})$。 4. $\\frac{5}{12}$时$=(\\boxed{25})$分 $\\frac{7}{20}$米$=(\\boxed{35})$厘米 $\\frac{4}{25}$吨$=(\\boxed{160})$千克 $\\frac{2}{5}m^3=(\\boxed{400})dm^3$",
+      "text": "4. $\\frac{5}{12}$时$=(\\boxed{25})$分 $\\frac{7}{20}$米$=(\\boxed{35})$厘米 $\\frac{4}{25}$吨$=(\\boxed{160})$千克 $\\frac{2}{5}m^3=(\\boxed{400})dm^3$",
       "label": "text",
-      "question_number": null,
-      "split_from_merged": false
+      "question_number": 4,
+      "split_from_merged": true
     },
     {
       "id": 10,
@@ -214,17 +227,69 @@
       "split_from_merged": false
     },
     {
-      "id": 16,
+      "id": 1600,
       "bbox": [
         1558,
-        157,
+        223,
+        2632,
+        310
+      ],
+      "text": "1. \\(\\frac{3}{8} + \\frac{5}{8} \\times \\frac{3}{4} = 1 \\times \\frac{3}{4} = \\frac{3}{4}\\) （×）",
+      "label": "text",
+      "question_number": 1,
+      "split_from_merged": true
+    },
+    {
+      "id": 1601,
+      "bbox": [
+        1558,
+        310,
+        2632,
+        398
+      ],
+      "text": "2. 一根电线长5m，用去\\(\\frac{2}{5}\\)后，还剩下\\(\\frac{3}{5}\\)m。（×）",
+      "label": "text",
+      "question_number": 2,
+      "split_from_merged": true
+    },
+    {
+      "id": 1602,
+      "bbox": [
+        1558,
+        398,
+        2632,
+        475
+      ],
+      "text": "3. 一个数（0除外）乘以真分数，积一定小于这个数。（√）",
+      "label": "text",
+      "question_number": 3,
+      "split_from_merged": true
+    },
+    {
+      "id": 1603,
+      "bbox": [
+        1558,
+        475,
+        2632,
+        563
+      ],
+      "text": "4. 有两根2米长的铁丝，第一根用去\\(\\frac{1}{4}\\)，第二根用去\\(\\frac{1}{4}\\)米，剩下的一样长。（×）",
+      "label": "text",
+      "question_number": 4,
+      "split_from_merged": true
+    },
+    {
+      "id": 1604,
+      "bbox": [
+        1558,
+        563,
         2632,
         600
       ],
-      "text": "1. $\\frac{3}{8} + \\frac{5}{8} \\times \\frac{3}{4} = 1 \\times \\frac{3}{4} = \\frac{3}{4}$ （×） 2. 一根电线长 5m，用去 $\\frac{2}{5}$ 后，还剩下 $\\frac{3}{5}$m。（×） 3. 一个数（0 除外）乘以真分数，积一定小于这个数。（√） 4. 有两根 2 米长的铁丝，第一根用去 $\\frac{1}{4}$，第二根用去 $\\frac{1}{4}$ 米，剩下的一样长。（×） 5. 整数乘法的运算定律与分数乘法的运算定律不同。（×）",
+      "text": "5. 整数乘法的运算定律与分数乘法的运算定律不同。（×）",
       "label": "text",
-      "question_number": null,
-      "split_from_merged": false
+      "question_number": 5,
+      "split_from_merged": true
     },
     {
       "id": 17,
@@ -260,7 +325,7 @@
         2489,
         1025
       ],
-      "text": "2.一块长方形菜地的长是24m,宽是长的$\\frac{3}{4}$,求面积的算式是(C)。 24×$\\frac{3}{4}$=18(m) A. $24 \\times \\frac{3}{4}$ B. $24 \\times \\frac{3}{4} + 24$ C. $24 \\times \\left(24 \\times \\frac{3}{4}\\right)$",
+      "text": "2.一块长方形菜地的长是24m,宽是长的$\\frac{3}{4}$,求面积的算式是(C)。\n24×$\\frac{3}{4}$=18(m)\nA. $24 \\times \\frac{3}{4}$\nB. $24 \\times \\frac{3}{4} + 24$\nC. $24 \\times \\left(24 \\times \\frac{3}{4}\\right)$",
       "label": "text",
       "question_number": null,
       "split_from_merged": false
@@ -351,7 +416,7 @@
         2599,
         1969
       ],
-      "text": "1.直接写得数。(4分)  $\\frac{5}{9} \\times 15 =$  $\\frac{3}{5} \\times 2 =$  $\\frac{1}{4} \\times \\frac{4}{5} =$  $\\frac{1}{9} \\times \\frac{3}{7} =$  $\\frac{3}{4} \\times \\frac{1}{5} =$  $\\frac{6}{11} \\times \\frac{1}{12} =$  $\\frac{3}{22} \\times \\frac{11}{13} =$  $28 \\times \\frac{7}{24} =$",
+      "text": "1.直接写得数。(4分)\n\n$\\frac{5}{9} \\times 15 =$\n\n$\\frac{3}{5} \\times 2 =$\n\n$\\frac{1}{4} \\times \\frac{4}{5} = \\frac{1}{5}$\n\n$\\frac{1}{9} \\times \\frac{3}{7} =$\n\n$\\frac{3}{4} \\times \\frac{1}{5} =$\n\n$\\frac{6}{11} \\times \\frac{1}{12} =$\n\n$\\frac{3}{22} \\times \\frac{11}{13} =$\n\n$28 \\times \\frac{7}{24} =$",
       "label": "text",
       "question_number": null,
       "split_from_merged": false
@@ -361,31 +426,19 @@
     {
       "type": "doc_title",
       "block_ids": [
-        1
+        1,
+        2
       ],
       "merged_bbox": [
         168,
         87,
         1332,
-        181
-      ],
-      "merged_text": "六年级上册数学拔尖测试卷人教版"
-    },
-    {
-      "type": "doc_title",
-      "block_ids": [
-        2
-      ],
-      "merged_bbox": [
-        510,
-        209,
-        988,
         289
       ],
-      "merged_text": "(月考测试卷一)"
+      "merged_text": "六年级上册数学拔尖测试卷人教版 (月考测试卷一)"
     },
     {
-      "type": "text",
+      "type": "aside",
       "block_ids": [
         3
       ],
@@ -460,20 +513,34 @@
         1243,
         797
       ],
-      "merged_text": "2.一个正方形的边长是$\\frac{1}{5}$米，它的周长是（4）米，它的面积是（$\\frac{1}{25}$）平方米。"
+      "merged_text": "2.一个正方形的边长是$\\frac{1}{5}$米，它的周长是(4)米，它的面积是($\\frac{1}{25}$)平方米。"
     },
     {
       "type": "question",
       "block_ids": [
-        9
+        900,
+        12
       ],
       "merged_bbox": [
         185,
-        791,
+        813,
+        1243,
+        956
+      ],
+      "merged_text": "3.右图用乘法算式表示是$(\\frac{2}{3}) \\times (\\frac{2}{5}) = (\\frac{4}{15})$。"
+    },
+    {
+      "type": "question",
+      "block_ids": [
+        901
+      ],
+      "merged_bbox": [
+        185,
+        894,
         943,
         1043
       ],
-      "merged_text": "3.右图用乘法算式表示是$(\\frac{2}{3}) \\times (\\frac{2}{5}) = (\\frac{4}{15})$。 4. $\\frac{5}{12}$时$=(\\boxed{25})$分 $\\frac{7}{20}$米$=(\\boxed{35})$厘米 $\\frac{4}{25}$吨$=(\\boxed{160})$千克 $\\frac{2}{5}m^3=(\\boxed{400})dm^3$"
+      "merged_text": "4. $\\frac{5}{12}$时$=(\\boxed{25})$分 $\\frac{7}{20}$米$=(\\boxed{35})$厘米 $\\frac{4}{25}$吨$=(\\boxed{160})$千克 $\\frac{2}{5}m^3=(\\boxed{400})dm^3$"
     },
     {
       "type": "question",
@@ -502,39 +569,14 @@
       "merged_text": "6.一根铁丝，已经用去$\\frac{2}{5}$，应该把（铁丝）看作单位“1”；等量关系式是：（1）×（$\\frac{2}{5}$）=（$\\frac{2}{5}$用去了的）。"
     },
     {
-      "type": "image",
-      "block_ids": [
-        12
-      ],
-      "merged_bbox": [
-        998,
-        825,
-        1243,
-        956
-      ],
-      "merged_text": ""
-    },
-    {
-      "type": "image",
-      "block_ids": [
-        13
-      ],
-      "merged_bbox": [
-        563,
-        1394,
-        906,
-        1645
-      ],
-      "merged_text": ""
-    },
-    {
       "type": "question",
       "block_ids": [
+        13,
         14
       ],
       "merged_bbox": [
         212,
-        1654,
+        1394,
         1251,
         1944
       ],
@@ -556,18 +598,70 @@
     {
       "type": "question",
       "block_ids": [
-        16
+        1600
       ],
       "merged_bbox": [
         1558,
-        157,
+        223,
         2632,
-        600
+        310
       ],
-      "merged_text": "1. $\\frac{3}{8} + \\frac{5}{8} \\times \\frac{3}{4} = 1 \\times \\frac{3}{4} = \\frac{3}{4}$ （×） 2. 一根电线长 5m，用去 $\\frac{2}{5}$ 后，还剩下 $\\frac{3}{5}$m。（×） 3. 一个数（0 除外）乘以真分数，积一定小于这个数。（√） 4. 有两根 2 米长的铁丝，第一根用去 $\\frac{1}{4}$，第二根用去 $\\frac{1}{4}$ 米，剩下的一样长。（×） 5. 整数乘法的运算定律与分数乘法的运算定律不同。（×）"
+      "merged_text": "1. \\(\\frac{3}{8} + \\frac{5}{8} \\times \\frac{3}{4} = 1 \\times \\frac{3}{4} = \\frac{3}{4}\\) （×）"
     },
     {
       "type": "question",
+      "block_ids": [
+        1601
+      ],
+      "merged_bbox": [
+        1558,
+        310,
+        2632,
+        398
+      ],
+      "merged_text": "2. 一根电线长5m，用去\\(\\frac{2}{5}\\)后，还剩下\\(\\frac{3}{5}\\)m。（×）"
+    },
+    {
+      "type": "question",
+      "block_ids": [
+        1602
+      ],
+      "merged_bbox": [
+        1558,
+        398,
+        2632,
+        475
+      ],
+      "merged_text": "3. 一个数（0除外）乘以真分数，积一定小于这个数。（√）"
+    },
+    {
+      "type": "question",
+      "block_ids": [
+        1603
+      ],
+      "merged_bbox": [
+        1558,
+        475,
+        2632,
+        563
+      ],
+      "merged_text": "4. 有两根2米长的铁丝，第一根用去\\(\\frac{1}{4}\\)，第二根用去\\(\\frac{1}{4}\\)米，剩下的一样长。（×）"
+    },
+    {
+      "type": "question",
+      "block_ids": [
+        1604
+      ],
+      "merged_bbox": [
+        1558,
+        563,
+        2632,
+        600
+      ],
+      "merged_text": "5. 整数乘法的运算定律与分数乘法的运算定律不同。（×）"
+    },
+    {
+      "type": "header",
       "block_ids": [
         17
       ],
@@ -603,7 +697,7 @@
         2489,
         1025
       ],
-      "merged_text": "2.一块长方形菜地的长是24m,宽是长的$\\frac{3}{4}$,求面积的算式是(C)。 24×$\\frac{3}{4}$=18(m) A. $24 \\times \\frac{3}{4}$ B. $24 \\times \\frac{3}{4} + 24$ C. $24 \\times \\left(24 \\times \\frac{3}{4}\\right)$"
+      "merged_text": "2.一块长方形菜地的长是24m,宽是长的$\\frac{3}{4}$,求面积的算式是(C)。\n24×$\\frac{3}{4}$=18(m)\nA. $24 \\times \\frac{3}{4}$\nB. $24 \\times \\frac{3}{4} + 24$\nC. $24 \\times \\left(24 \\times \\frac{3}{4}\\right)$"
     },
     {
       "type": "question",
@@ -621,41 +715,17 @@
     {
       "type": "question",
       "block_ids": [
-        21
+        21,
+        22,
+        23
       ],
       "merged_bbox": [
         1577,
         1196,
-        2051,
-        1271
-      ],
-      "merged_text": "4.如图,小红看小娟在(A)方向。"
-    },
-    {
-      "type": "image",
-      "block_ids": [
-        22
-      ],
-      "merged_bbox": [
-        2034,
-        1274,
-        2209,
-        1418
-      ],
-      "merged_text": ""
-    },
-    {
-      "type": "question",
-      "block_ids": [
-        23
-      ],
-      "merged_bbox": [
-        1612,
-        1433,
         2368,
         1479
       ],
-      "merged_text": "A.北偏东55° B.东偏北55° C.西偏南35°"
+      "merged_text": "4.如图,小红看小娟在(A)方向。 A.北偏东55° B.东偏北55° C.西偏南35°"
     },
     {
       "type": "question",
@@ -694,10 +764,10 @@
         2599,
         1969
       ],
-      "merged_text": "1.直接写得数。(4分)  $\\frac{5}{9} \\times 15 =$  $\\frac{3}{5} \\times 2 =$  $\\frac{1}{4} \\times \\frac{4}{5} =$  $\\frac{1}{9} \\times \\frac{3}{7} =$  $\\frac{3}{4} \\times \\frac{1}{5} =$  $\\frac{6}{11} \\times \\frac{1}{12} =$  $\\frac{3}{22} \\times \\frac{11}{13} =$  $28 \\times \\frac{7}{24} =$"
+      "merged_text": "1.直接写得数。(4分)\n\n$\\frac{5}{9} \\times 15 =$\n\n$\\frac{3}{5} \\times 2 =$\n\n$\\frac{1}{4} \\times \\frac{4}{5} = \\frac{1}{5}$\n\n$\\frac{1}{9} \\times \\frac{3}{7} =$\n\n$\\frac{3}{4} \\times \\frac{1}{5} =$\n\n$\\frac{6}{11} \\times \\frac{1}{12} =$\n\n$\\frac{3}{22} \\times \\frac{11}{13} =$\n\n$28 \\times \\frac{7}{24} =$"
     },
     {
-      "type": "unknown",
+      "type": "aside",
       "block_ids": [
         0
       ],

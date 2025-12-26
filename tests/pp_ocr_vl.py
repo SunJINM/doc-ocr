@@ -8,7 +8,7 @@ import requests
 API_URL = "https://2dpbo1a3kacegcw7.aistudio-app.com/layout-parsing"
 TOKEN = "661cde66b036acc549db86b61fb33e1de6a60ce8"
 
-file_path = r"D:\WorkProjects\doc-ocr\data\shuxue\mifeng_1.jpg"
+file_path = r"D:\WorkProjects\doc-ocr\input\mifeng_1.jpg"
 
 with open(file_path, "rb") as file:
     file_bytes = file.read()

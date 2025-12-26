@@ -149,8 +149,12 @@ class OCRBasedSplitter:
             end = unique_matches[i+1]['start_pos'] if i+1 < len(unique_matches) else len(block.text)
             sub_text = block.text[start:end].strip()
 
+            # 生成新的唯一整数 ID（避免字符串 ID）
+            # 使用原 ID * 100 + 子块索引的方式
+            new_id = block.id * 100 + i
+
             sub_blocks.append(DetectionBlock(
-                id=f"{block.id}.{i}",
+                id=new_id,
                 bbox=bbox,
                 text=sub_text,
                 label=block.label,
@@ -169,7 +173,7 @@ class OCRBasedSplitter:
     ) -> List[List[int]]:
         """核心：基于 OCR 行级坐标精确计算 bbox"""
         x1, y1, x2, y2 = block.bbox
-        cropped_image = original_image[(y1 - 50):(y2 + 50), (x1 - 50):x2]
+        cropped_image = original_image[y1:y2, x1:x2]
 
         # 保存临时图像
         with tempfile.NamedTemporaryFile(suffix='.jpg', delete=False) as tmp:
@@ -178,7 +182,7 @@ class OCRBasedSplitter:
 
         try:
             # 关键：return_word_box=True 获取行级坐标
-            ocr_results = self.ocr_model.predict(input=tmp_path, return_word_box=True)
+            ocr_results = self.ocr_model.predict(input=tmp_path)
 
             result = ocr_results[0]
             rec_texts = result.get("rec_texts")
@@ -195,8 +199,7 @@ class OCRBasedSplitter:
                 if rec_polys[i] is not None and rec_polys[i].any()
             ]
         finally:
-            # os.remove(tmp_path)
-            pass
+            os.remove(tmp_path)
 
         if not ocr_lines:
             raise ValueError("OCR 未返回有效结果")
@@ -293,7 +296,7 @@ class OCRBasedSplitter:
 # ==================== 新增：规则过滤器 ====================
 
 class ContextAwareSplitter:
-    """带语境感知的拆分器"""
+    """基于规则的拆分器"""
 
     # 排除模式（不拆分）
     EXCLUDE_PATTERNS = [
@@ -969,6 +972,14 @@ class PostProcessor:
             if block.text:
                 texts.append(block.text)
 
+        # 处理空组（所有 ID 都不在 block_map 中）
+        if min_x == float('inf'):
+            logger.warning(f"组 {group_ids} 中所有 ID 都未找到对应 block，返回默认值")
+            return {
+                "bbox": [0, 0, 0, 0],
+                "text": ""
+            }
+
         return {
             "bbox": [int(min_x), int(min_y), int(max_x), int(max_y)],
             "text": " ".join(texts)
@@ -1050,9 +1061,23 @@ class ExamPaperAnalyzerVLV2:
         if enable_ocr_split:
             try:
                 ocr_params = {
-                    'use_angle_cls': True,
-                    'lang': 'ch',
-                    'device': 'cpu'
+                    # 功能开关（对应界面“关闭”）
+                    'use_doc_orientation_classify': False,
+                    'use_doc_unwarping': False,
+                    'use_textline_orientation': False,
+
+                    # 文本检测相关（界面配置）
+                    'text_det_thresh': 0.3,                  # 检测像素阈值
+                    'text_det_box_thresh': 0.6,              # 检测框阈值
+                    'text_det_unclip_ratio': 1.5,            # 扩张系数
+
+                    # 文本识别相关（界面配置）
+                    'text_rec_score_thresh': 0.0,            # 识别阈值
+                    'return_word_box': False,                 # 返回单字框（界面勾选）
+
+                    # 基础配置
+                    'lang': 'ch',                            # 中文识别
+                    'ocr_version': 'PP-OCRv5',                     # 若需指定OCR版本可填，如"PP-OCRv5"
                 }
                 if ocr_model_dir:
                     ocr_params['det_model_dir'] = os.path.join(ocr_model_dir, 'det')
