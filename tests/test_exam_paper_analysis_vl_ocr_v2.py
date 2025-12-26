@@ -87,15 +87,6 @@ class AnalysisResult:
 class OCRBasedSplitter:
     """基于 OCR 行级坐标的精确拆分器"""
 
-    # 题号正则模式
-    QUESTION_PATTERNS = [
-        r'^(\d+)[\.、]\s*',     
-        r'^\((\d+)\)\s*',          
-        r'^第(\d+)题\s*',         
-        r'^\[(\d+)\]\s*',         
-        r'^[【](\d+)[】]\s*',      
-    ]
-
     def __init__(self, ocr_model):
         """
         Args:
@@ -103,33 +94,35 @@ class OCRBasedSplitter:
         """
         self.ocr_model = ocr_model
 
-    def split(self, block: DetectionBlock, original_image: np.ndarray) -> List[DetectionBlock]:
-        """拆分单个文本块"""
-        import re
+    def split(
+        self,
+        block: DetectionBlock,
+        question_matches: List[Dict[str, Any]],
+        original_image: np.ndarray
+    ) -> List[DetectionBlock]:
+        """
+        拆分单个文本块
 
-        # 检测题号
-        matches = []
-        for pattern in self.QUESTION_PATTERNS:
-            for match in re.finditer(pattern, block.text, re.MULTILINE):
-                number = int(match.group(1))
-                position = match.start()
-                matches.append({
-                    'question_number': number,
-                    'start_pos': position,
-                    'matched_str': match.group(0)
-                })
+        Args:
+            block: 待拆分的文本块
+            question_matches: 已检测的题号列表 [{'number': int, 'position': int, 'matched_str': str}]
+            original_image: 原始图像
 
-        # 按位置排序并去重
-        matches.sort(key=lambda x: x['start_pos'])
-        unique_matches = []
-        last_pos = -10
-        for m in matches:
-            if m['start_pos'] - last_pos > 5:
-                unique_matches.append(m)
-                last_pos = m['start_pos']
-
-        if len(unique_matches) < 2:
+        Returns:
+            拆分后的文本块列表
+        """
+        if len(question_matches) < 2:
             return [block]
+
+        # 转换题号格式为内部使用格式
+        unique_matches = [
+            {
+                'question_number': m['number'],
+                'start_pos': m['position'],
+                'matched_str': m['matched_str']
+            }
+            for m in question_matches
+        ]
 
         logger.info(f"块 {block.id} 检测到 {len(unique_matches)} 个题号: {[m['question_number'] for m in unique_matches]}")
 
@@ -139,8 +132,8 @@ class OCRBasedSplitter:
                 block, unique_matches, original_image
             )
         except Exception as e:
-            logger.warning(f"OCR 精确定位失败: {e}，使用估算")
-            sub_bboxes = self._estimate_positions(block, unique_matches)
+            logger.warning(f"OCR 精确定位失败: {e}，不拆分该块")
+            return [block]
 
         # 创建子块
         sub_blocks = []
@@ -224,7 +217,11 @@ class OCRBasedSplitter:
                 raise ValueError(f"未找到题号 {target_number}")
 
             # 计算当前题目的边界
-            top = question_line_bbox[1]
+            # 第一块使用原始块的 y1，后续块使用 OCR 行级坐标
+            if i == 0:
+                top = y1
+            else:
+                top = question_line_bbox[1]
 
             # 下一题的起始作为当前题的结束
             if i + 1 < len(question_matches):
@@ -298,8 +295,8 @@ class OCRBasedSplitter:
 class ContextAwareSplitter:
     """基于规则的拆分器"""
 
-    # 排除模式（不拆分）
-    EXCLUDE_PATTERNS = [
+    # 题号正则模式
+    QUESTION_PATTERNS = [
         r'^(\d+)[\.、]\s*',        # 1. 或 1、
         r'^\((\d+)\)\s*',          # (1)
         r'^第(\d+)题\s*',          # 第1题
@@ -307,32 +304,29 @@ class ContextAwareSplitter:
         r'^[【](\d+)[】]\s*',       # 【1】
     ]
 
-    def should_split(self, text: str) -> bool:
-        """判断是否应该拆分"""
+    def detect_and_validate(self, text: str) -> Optional[List[Dict[str, Any]]]:
+        """
+        检测并验证文本中的题号
+
+        Returns:
+            如果需要拆分，返回题号列表；否则返回 None
+        """
         question_numbers = self._detect_question_numbers(text)
         if len(question_numbers) <= 1:
-            return False
+            return None
 
-        return True
+        return question_numbers
     
     def _detect_question_numbers(self, text: str) -> List[Dict[str, Any]]:
         """
         检测文本中的所有题号
 
         Returns:
-            [{'number': int, 'position': int, 'matched_str': str, 'type': str}]
+            [{'number': int, 'position': int, 'matched_str': str, 'pattern': str}]
         """
-        question_number_patterns: List[str] = [
-            r'^(\d+)[\.、]\s*',        # 1. 或 1、
-            r'^\((\d+)\)\s*',          # (1)
-            r'^第(\d+)题\s*',          # 第1题
-            r'^\[(\d+)\]\s*',          # [1]
-            r'^[【](\d+)[】]\s*',       # 【1】
-        ]
-
         question_numbers = []
 
-        for pattern in question_number_patterns:
+        for pattern in self.QUESTION_PATTERNS:
             try:
                 for match in re.finditer(pattern, text, re.MULTILINE):
                     number = int(match.group(1))
@@ -1146,15 +1140,20 @@ class ExamPaperAnalyzerVLV2:
             split_count = 0
 
             for block in blocks:
-                if block.label == "text" and self.rule_filter.should_split(block.text):
-                    logger.info(f"文本：{block.text} 需要拆分")
-                    try:
-                        sub_blocks = self.ocr_splitter.split(block, original_image)
-                        if len(sub_blocks) > 1:
-                            split_count += 1
-                        refined_blocks.extend(sub_blocks)
-                    except Exception as e:
-                        logger.warning(f"块 {block.id} 拆分失败: {e}，保持原样")
+                if block.label == "text":
+                    # 检测题号
+                    question_matches = self.rule_filter.detect_and_validate(block.text)
+                    if question_matches:
+                        logger.info(f"文本：{block.text[:50]}... 检测到 {len(question_matches)} 个题号，需要拆分")
+                        try:
+                            sub_blocks = self.ocr_splitter.split(block, question_matches, original_image)
+                            if len(sub_blocks) > 1:
+                                split_count += 1
+                            refined_blocks.extend(sub_blocks)
+                        except Exception as e:
+                            logger.warning(f"块 {block.id} 拆分失败: {e}，保持原样")
+                            refined_blocks.append(block)
+                    else:
                         refined_blocks.append(block)
                 else:
                     refined_blocks.append(block)
@@ -1298,7 +1297,7 @@ class ExamPaperAnalyzerVLV2:
 
 def main():
     """测试主函数"""
-    IMAGE_PATH = r"D:\WorkProjects\doc-ocr\input\mifeng_doubao_1.jpg"
+    IMAGE_PATH = r"D:\WorkProjects\doc-ocr\input\2.png"
     OUTPUT_DIR = "./output/exam_analysis_vl_v2"
     VL_MODEL = "qwen-vl-max"
 

@@ -1,0 +1,255 @@
+{
+  "image_size": {
+    "width": 6335,
+    "height": 4475
+  },
+  "blocks": [
+    {
+      "id": 0,
+      "bbox": [
+        128,
+        352,
+        1765,
+        459
+      ],
+      "text": "如图所示，点P，A，B，C都在方格的交点上。",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 1,
+      "bbox": [
+        5652,
+        356,
+        5928,
+        616
+      ],
+      "text": "",
+      "label": "image",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 2,
+      "bbox": [
+        1208,
+        565,
+        1922,
+        945
+      ],
+      "text": "",
+      "label": "image",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 3,
+      "bbox": [
+        129,
+        1075,
+        1339,
+        1181
+      ],
+      "text": "1.量一量，它是( )角。(2分)",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 4,
+      "bbox": [
+        131,
+        1284,
+        2956,
+        1562
+      ],
+      "text": "2.过点P作线段AB的垂线，垂足为O。如果每个方格均为边长1厘米的正方形，那么PO的长度(_)3厘米。(填“大于”“小于”或“等于”)(4分)",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 5,
+      "bbox": [
+        124,
+        1656,
+        3001,
+        2189
+      ],
+      "text": "3.找一个点D，使四边形ABCD是一个等腰梯形，画出这个等腰梯形。(2分)4.在这个等腰梯形中画一条线段，将其分成一个平行四边形与一个三角形。(2分)五、解决问题。(共13分)",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 6,
+      "bbox": [
+        133,
+        2284,
+        3012,
+        2729
+      ],
+      "text": "1.某公园从广场到秀园路有A、B两条路，但人们总喜欢在草坪上走出C这样一条路。你能利用所学知识解释这一现象产生的原因吗?如果你是草坪管理员，你会给公园设计师提什么建议?(6分)",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 7,
+      "bbox": [
+        2275,
+        2836,
+        2967,
+        3256
+      ],
+      "text": "",
+      "label": "image",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 8,
+      "bbox": [
+        126,
+        3591,
+        3016,
+        4035
+      ],
+      "text": "2.有一个梯形(如图)，在互相平行的一组对边中，较长边的长度是较短边的4倍，如果将较短的边延长9厘米，就成了一个正方形。这个梯形的周长是多少厘米? (7分)",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 9,
+      "bbox": [
+        4390,
+        960,
+        4672,
+        1071
+      ],
+      "text": "附加题",
+      "label": "paragraph_title",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 10,
+      "bbox": [
+        3122,
+        1172,
+        5925,
+        1617
+      ],
+      "text": "我国古代的一些落地长窗往往镶嵌半透明的贝壳于窗棂上，称为“明瓦窗”。在制作“明瓦窗”的过程中，需要将贝壳刷洗、晾晒并切割成正方形的薄片供后续使用。如图，两个打磨、切割好的半透明的正方形“明瓦”叠放在一起。已知",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 11,
+      "bbox": [
+        3133,
+        1668,
+        4579,
+        1783
+      ],
+      "text": "$\\angle 2 + \\angle 3 = 30^{\\circ}$ 则 $\\angle 4 + \\angle 5 =$(_)。(5分)",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 12,
+      "bbox": [
+        5234,
+        1673,
+        5833,
+        2117
+      ],
+      "text": "",
+      "label": "image",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 13,
+      "bbox": [
+        4275,
+        2512,
+        4790,
+        2654
+      ],
+      "text": "参考答案",
+      "label": "paragraph_title",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 14,
+      "bbox": [
+        3085,
+        2775,
+        5188,
+        2884
+      ],
+      "text": "一、1.1052.2163.1074.55.33586.66",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 15,
+      "bbox": [
+        3103,
+        2970,
+        4225,
+        3085
+      ],
+      "text": "二、1.×2.×3.√4.×",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 16,
+      "bbox": [
+        3111,
+        3166,
+        3873,
+        3283
+      ],
+      "text": "三、1. C 2. B 3. C",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 17,
+      "bbox": [
+        3100,
+        3366,
+        4649,
+        3483
+      ],
+      "text": "四、1.57锐2.如图。小于3.如图。",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 18,
+      "bbox": [
+        3096,
+        3567,
+        3928,
+        3682
+      ],
+      "text": "4.如图。(画法不唯一)",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    }
+  ]
+}
