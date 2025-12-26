@@ -178,6 +178,7 @@ venv.bak/
 .idea
 
 CLAUDE.md
+IFLOW.md
 
 # Temporary files
 tmp/
