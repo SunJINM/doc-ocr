@@ -1,0 +1,788 @@
+{
+  "image_size": {
+    "width": 4096,
+    "height": 3072
+  },
+  "blocks": [
+    {
+      "id": 0,
+      "bbox": [
+        1684,
+        205,
+        1891,
+        279
+      ],
+      "text": "",
+      "label": "header_image",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 1,
+      "bbox": [
+        309,
+        272,
+        1877,
+        368
+      ],
+      "text": "11.★（8分）小王购买了一套经济适用房，他准备将地面铺上地砖，地面结构如图所示.根据图中的数据（单位：m），解答下列问题：",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 2,
+      "bbox": [
+        388,
+        373,
+        1019,
+        419
+      ],
+      "text": "(1) 用含 x, y 的代数式表示地面总面积;",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 3,
+      "bbox": [
+        388,
+        424,
+        1727,
+        470
+      ],
+      "text": "(2) 当 x=4, y=2 时, 如果铺 1 m² 地砖的平均费用为 30 元, 那么铺地砖的费用是多少元?",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 4,
+      "bbox": [
+        359,
+        465,
+        1493,
+        832
+      ],
+      "text": "\\[S_{地}=4y\\cdot(2+2+x)-2y(2)\\therefore S_{地}=14y+4xy\\\\\n=4y\\cdot(4+x)-2y\\quad\\therefore x=4,y=2\\\\\n=16y+4xy-2y\\quad\\therefore S_{地}=14\\times2+4\\times4\\times2\\\\\n=(14y+4xy)m^{2}\\quad=28+32\\\\\n\\therefore\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{2}\\times\\sqrt{",
+      "label": "display_formula",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 5,
+      "bbox": [
+        1521,
+        480,
+        1854,
+        831
+      ],
+      "text": "<table><tr><td>卧室</td><td>卫生间</td><td>厨房</td></tr><tr><td colspan=\"3\">客厅</td></tr></table>",
+      "label": "table",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 6,
+      "bbox": [
+        595,
+        808,
+        1026,
+        876
+      ],
+      "text": "总面积为$(14y+4xy)m^2$",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 7,
+      "bbox": [
+        322,
+        853,
+        1867,
+        966
+      ],
+      "text": "12. (9分) 数学中的逻辑推理主要包括归纳推理、类比推理和演绎推理. 小明尝试探索能被 8 整除的整数的规律. 观察下列式子:",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 8,
+      "bbox": [
+        386,
+        971,
+        1005,
+        1013
+      ],
+      "text": "$1340 \\div 8 = 167.5$，$340 \\div 8 = 42.5$，$40 \\div 8 = 5$；",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 9,
+      "bbox": [
+        391,
+        1012,
+        989,
+        1071
+      ],
+      "text": "$6852 \\div 8 = 794$，$352 \\div 8 = 44$，$52 \\div 8 = 6.5$；",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 10,
+      "bbox": [
+        393,
+        1069,
+        1022,
+        1118
+      ],
+      "text": "$12 \\div 112 \\div 8 = 1514$，$112 \\div 8 = 14$，$12 \\div 8 = 1.5$；",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 11,
+      "bbox": [
+        393,
+        1119,
+        1301,
+        1174
+      ],
+      "text": "54320÷8=6790，320÷8=40，20÷8=2.5. $160 \\div 8 = 20$",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 12,
+      "bbox": [
+        401,
+        1168,
+        1584,
+        1214
+      ],
+      "text": "(1)【猜想】请你判断：3265160_被8整除(填“能”或“不能”).",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 13,
+      "bbox": [
+        392,
+        1213,
+        1870,
+        1307
+      ],
+      "text": "（2）【归纳】判断一个大于1000的整数能否被8整除，只需要看这个数的后三位数能否被8整除。请说明理由。",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 14,
+      "bbox": [
+        403,
+        1311,
+        1744,
+        1366
+      ],
+      "text": "(3)【应用】如果一个整数能被25整除,那么这个整数最后两位数必须是00,25,50,75.",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 15,
+      "bbox": [
+        327,
+        1541,
+        1541,
+        1586
+      ],
+      "text": "13.★（10分）将连续奇数1，3，5，7，…排成如下的数表，十字框中框出5个数.",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 16,
+      "bbox": [
+        406,
+        1592,
+        1371,
+        1636
+      ],
+      "text": "（1）十字框中框出的5个数的和与框子中间的数17有什么关系？",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 17,
+      "bbox": [
+        407,
+        1641,
+        1573,
+        1686
+      ],
+      "text": "（2）若设中问的数为a，请用含a的代数式表示十字框中框出的5个数字之和.",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 18,
+      "bbox": [
+        405,
+        1688,
+        1883,
+        1736
+      ],
+      "text": "（3）十字框中框出的5个数之和能等于2035吗？能等于2055吗？若不能，说明理由；若能，求出",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 19,
+      "bbox": [
+        396,
+        1740,
+        1328,
+        1784
+      ],
+      "text": "这5个数，并指出这5个数中的中间数位于第几行的第几个数.",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 20,
+      "bbox": [
+        328,
+        1783,
+        922,
+        1845
+      ],
+      "text": "解：$(1) \\times (5 + 17 + 15 + 19 + 29) \\div 17 = 5$",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 21,
+      "bbox": [
+        429,
+        1836,
+        1265,
+        1912
+      ],
+      "text": "六、框出的5个数和是的5倍",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 22,
+      "bbox": [
+        387,
+        1928,
+        648,
+        1994
+      ],
+      "text": "(2) \\(5 \\cdot a = 5a\\)",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 23,
+      "bbox": [
+        1375,
+        1749,
+        1885,
+        2137
+      ],
+      "text": "",
+      "label": "image",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 24,
+      "bbox": [
+        383,
+        2018,
+        1150,
+        2098
+      ],
+      "text": "(3) $\\because 2035 \\div 5 = 407$ 又 $\\because 407$ 为奇数 $\\therefore$ 是",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 25,
+      "bbox": [
+        445,
+        2111,
+        1166,
+        2188
+      ],
+      "text": "$\\because 2055 \\div 5 = 411$ $\\therefore 411$为奇数 $\\therefore$ 也是",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 26,
+      "bbox": [
+        412,
+        2191,
+        2316,
+        2574
+      ],
+      "text": "为2035时五数为 405 407 409 411 413\n\n为2055时五数为 409 411 413 417 419\n\n$\\because$ 中间数不能在第1、6列和第1、…行\n\n$\\therefore 407$ 在第34行第5个数。 $\\therefore 407 \\div 2 = 203 \\cdots 1$ $(203 + 1) \\div 6 = 34 \\cdots 0$\n\n$\\therefore 411$ 位于第35行第2个数。 $\\therefore 411 \\div 2 = 205 \\cdots 1$ $(205 + 1) \\div 6 = 34 \\cdots 2$\n\n$\\therefore 34 + 1 = 35$",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 27,
+      "bbox": [
+        2120,
+        270,
+        3325,
+        322
+      ],
+      "text": "11.（7分）先化简，再求值：-2(mn-3m²)-[m²-5(mn-m²)+2mn]，其中m=1，n=2.",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 28,
+      "bbox": [
+        3482,
+        198,
+        3687,
+        279
+      ],
+      "text": "",
+      "label": "header_image",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 29,
+      "bbox": [
+        2413,
+        333,
+        3246,
+        493
+      ],
+      "text": "\\begin{array}{l}\\text{解: 原式} = -2mn + 6m^2 - m^2 + 5mn - 5m^2 - 2mn\\\\= mn\\end{array}",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 30,
+      "bbox": [
+        3273,
+        393,
+        3513,
+        483
+      ],
+      "text": "样",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 31,
+      "bbox": [
+        2523,
+        493,
+        2830,
+        560
+      ],
+      "text": "当$m=1$，$n=2$时",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 32,
+      "bbox": [
+        2556,
+        560,
+        3007,
+        632
+      ],
+      "text": " $$ m n=1\\times2=2\\therefore\\frac{1}{2}m n=1\\times2=2\\therefore m n=1\\times2=2 $$ ",
+      "label": "display_formula",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 33,
+      "bbox": [
+        2128,
+        628,
+        2803,
+        676
+      ],
+      "text": "12.（8分）如图，小明和小美在做数学游戏.",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 34,
+      "bbox": [
+        2231,
+        715,
+        2536,
+        916
+      ],
+      "text": "任意写一个三位数，百位数字比十位数字大2，且交换百位数字与十位数字，",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 35,
+      "bbox": [
+        2575,
+        768,
+        2878,
+        921
+      ],
+      "text": "用上述较大的三位数减去较小的三位数，得到一个结果.",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 36,
+      "bbox": [
+        2937,
+        755,
+        3228,
+        906
+      ],
+      "text": "无论你写的三位数是几，我都可以猜中最后的结果.",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 37,
+      "bbox": [
+        2921,
+        927,
+        3088,
+        1114
+      ],
+      "text": "",
+      "label": "image",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 38,
+      "bbox": [
+        2203,
+        1133,
+        2968,
+        1184
+      ],
+      "text": "(1)若小美给出的数是421，则得到的结果是180",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 39,
+      "bbox": [
+        2204,
+        1186,
+        3374,
+        1232
+      ],
+      "text": "（2）假设小美给出的三位数的百位数字为a，个位数字是b，请解释其中的原因.",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 40,
+      "bbox": [
+        2295,
+        1231,
+        3191,
+        1298
+      ],
+      "text": "解:由题意得百位为a，十位为a-2，个位为b",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 41,
+      "bbox": [
+        2371,
+        1295,
+        3226,
+        1506
+      ],
+      "text": " $$ =100a+10a-20+b-100a+20=10a-b $$ ",
+      "label": "display_formula",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 42,
+      "bbox": [
+        2125,
+        1499,
+        3650,
+        1595
+      ],
+      "text": "13.（10分）某学校准备在网上订购一批某品牌的足球和跳绳，在查阅网店后发现足球每个定价140元，跳绳每条定价30元.现有A，B两家网店均提供包邮服务，并提出了各自的优惠方案：",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 43,
+      "bbox": [
+        2189,
+        1600,
+        2687,
+        1645
+      ],
+      "text": "A网店：买一个足球送一条跳绳；",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 44,
+      "bbox": [
+        2189,
+        1648,
+        2812,
+        1693
+      ],
+      "text": "B网店：足球和跳绳都按定价的90%付款.",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 45,
+      "bbox": [
+        2189,
+        1698,
+        2816,
+        1742
+      ],
+      "text": "已知要购买足球60个，跳绳x条（x>60）",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 46,
+      "bbox": [
+        3354,
+        1695,
+        3632,
+        1787
+      ],
+      "text": " $$ x=140\\times54+27x $$ ",
+      "label": "inline_formula",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 47,
+      "bbox": [
+        2160,
+        1789,
+        3542,
+        1852
+      ],
+      "text": "$7560 + 27x$（用含x的代数式表示）；$60 \\times 140 + 30(860) = 8400 + 30x - 1800 = 6600 + 30x$",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 48,
+      "bbox": [
+        2200,
+        1847,
+        3145,
+        1891
+      ],
+      "text": "（2）若x=100时，通过计算说明此时在哪家网店购买较为合算？",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 49,
+      "bbox": [
+        2200,
+        1891,
+        3622,
+        1941
+      ],
+      "text": "(3) 当x=100时，你能给出一种更为省钱的购买方案吗？试写出你的购买方法，并计算需付款多",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 50,
+      "bbox": [
+        2191,
+        1940,
+        2626,
+        2003
+      ],
+      "text": " $$ \\therefore\\angle1=\\angle100 $$ ",
+      "label": "display_formula",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 51,
+      "bbox": [
+        3045,
+        1948,
+        3292,
+        2010
+      ],
+      "text": "(3)∵x≤60",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 52,
+      "bbox": [
+        2290,
+        2011,
+        3008,
+        2090
+      ],
+      "text": " $$ A:6600+30\\times100=6600+3000=9600(c m) $$ ",
+      "label": "display_formula",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 53,
+      "bbox": [
+        3098,
+        2009,
+        3242,
+        2080
+      ],
+      "text": "A划算",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 54,
+      "bbox": [
+        2292,
+        2086,
+        3040,
+        2223
+      ],
+      "text": " $$ B:7560+27\\times100=7560+2700=109260(\\pi) $$ ",
+      "label": "display_formula",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 55,
+      "bbox": [
+        3081,
+        2087,
+        3796,
+        2179
+      ],
+      "text": "在A买60个足球，还花0元买了60个跳绳",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 56,
+      "bbox": [
+        3067,
+        2169,
+        3628,
+        2264
+      ],
+      "text": "$\\therefore$再在B买$100-60=40$（个）跳绳",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 57,
+      "bbox": [
+        2316,
+        2231,
+        2606,
+        2311
+      ],
+      "text": "A网店划算",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 58,
+      "bbox": [
+        3003,
+        2250,
+        3817,
+        2379
+      ],
+      "text": " $$ \\because60\\times140+40\\times0.9\\times30=8400+1080=9480(c m) $$ ",
+      "label": "display_formula",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 59,
+      "bbox": [
+        3057,
+        2356,
+        3375,
+        2450
+      ],
+      "text": "六、付款9480元",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    }
+  ]
+}

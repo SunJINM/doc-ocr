@@ -1,0 +1,619 @@
+{
+  "image_size": {
+    "width": 1653,
+    "height": 2338
+  },
+  "blocks": [
+    {
+      "id": 0,
+      "bbox": [
+        582,
+        94,
+        1382,
+        162
+      ],
+      "text": "专题二 一词多义整合练 每空0.5，共31分.",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 1,
+      "bbox": [
+        216,
+        158,
+        747,
+        335
+      ],
+      "text": "1.中 $\\begin{cases} \\text{①撒盐空中差可拟（中间）} \\\\ \\text{②过中不至（中午）} \\\\ \\text{①人不知而不愠（了解，知道）} \\end{cases}$",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 2,
+      "bbox": [
+        289,
+        340,
+        751,
+        460
+      ],
+      "text": "②知之者不如好之者(知道) ③温故而知新(获得)",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 3,
+      "bbox": [
+        209,
+        497,
+        288,
+        542
+      ],
+      "text": "3.乐",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 4,
+      "bbox": [
+        285,
+        466,
+        747,
+        589
+      ],
+      "text": "①不亦乐乎（快乐） ②好之者不如乐之者（以······为乐）",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 5,
+      "bbox": [
+        291,
+        592,
+        678,
+        649
+      ],
+      "text": "①学而时习之（并且）",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 6,
+      "bbox": [
+        291,
+        654,
+        709,
+        773
+      ],
+      "text": "②人不知而不愠（却）\n③博学而笃志（而且）",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 7,
+      "bbox": [
+        205,
+        781,
+        738,
+        901
+      ],
+      "text": "5.为$\\begin{cases}①为人谋而不忠乎（替） \\\\②可以为师矣（成为）\\end{cases}$",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 8,
+      "bbox": [
+        203,
+        936,
+        285,
+        984
+      ],
+      "text": "6.学",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 9,
+      "bbox": [
+        283,
+        907,
+        702,
+        1025
+      ],
+      "text": "①夫学须静也（学习） ②非志无以成学（学问）",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 10,
+      "bbox": [
+        200,
+        1063,
+        277,
+        1110
+      ],
+      "text": "7.志",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 11,
+      "bbox": [
+        277,
+        1033,
+        709,
+        1152
+      ],
+      "text": "①非淡泊无以明志(志向) ②非志无以成学(立志)",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 12,
+      "bbox": [
+        195,
+        1189,
+        276,
+        1238
+      ],
+      "text": "8.去",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 13,
+      "bbox": [
+        278,
+        1160,
+        637,
+        1280
+      ],
+      "text": "①意与日去(逝去) ②太丘舍去(离开)",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 14,
+      "bbox": [
+        193,
+        1315,
+        276,
+        1364
+      ],
+      "text": "9.行",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 15,
+      "bbox": [
+        278,
+        1284,
+        660,
+        1407
+      ],
+      "text": "①夫君子之行(行为操守)②三人行(行走)",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 16,
+      "bbox": [
+        193,
+        1443,
+        290,
+        1489
+      ],
+      "text": "10.意",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 17,
+      "bbox": [
+        291,
+        1414,
+        772,
+        1536
+      ],
+      "text": "①意暇甚(神情) ②意将隧入以攻其后也(打算)",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 18,
+      "bbox": [
+        191,
+        1570,
+        289,
+        1616
+      ],
+      "text": "11.敌",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 19,
+      "bbox": [
+        292,
+        1540,
+        713,
+        1657
+      ],
+      "text": "①恐前后受其敌(攻击) ②盖以诱敌(敌人)",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 20,
+      "bbox": [
+        187,
+        1697,
+        286,
+        1744
+      ],
+      "text": "12.前",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 21,
+      "bbox": [
+        287,
+        1666,
+        709,
+        1786
+      ],
+      "text": "①恐前后受其敌(前面) ②狼不敢前(上前)",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 22,
+      "bbox": [
+        183,
+        1795,
+        671,
+        1911
+      ],
+      "text": "13.止$\\begin{cases}①止有剩骨（只） \\\\②一狼得骨止（停止）\\end{cases}$",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 23,
+      "bbox": [
+        947,
+        161,
+        1481,
+        220
+      ],
+      "text": "①知之者不如好之者(学问、知识)",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 24,
+      "bbox": [
+        950,
+        220,
+        1338,
+        267
+      ],
+      "text": "②夫君子之行(的)",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 25,
+      "bbox": [
+        950,
+        268,
+        1366,
+        321
+      ],
+      "text": "③下车引之(代词，代元方)",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 26,
+      "bbox": [
+        950,
+        320,
+        1398,
+        373
+      ],
+      "text": "④又数刀毙之(代词，代狼)",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 27,
+      "bbox": [
+        852,
+        367,
+        946,
+        413
+      ],
+      "text": "14.之",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 28,
+      "bbox": [
+        949,
+        370,
+        1531,
+        470
+      ],
+      "text": "⑤而两狼之并驱如故（取消句子独立性）⑥久之，目似瞑（延长音节）",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 29,
+      "bbox": [
+        949,
+        470,
+        1430,
+        521
+      ],
+      "text": "⑦禽兽之变诈几何哉（的）",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 30,
+      "bbox": [
+        948,
+        521,
+        1310,
+        569
+      ],
+      "text": "⑧宋之丁氏（的）",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 31,
+      "bbox": [
+        944,
+        567,
+        1413,
+        629
+      ],
+      "text": "⑨闻之于宋君(代词，代这件事)",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 32,
+      "bbox": [
+        941,
+        624,
+        1331,
+        725
+      ],
+      "text": "①静以修身(用来) ②可以为师矣(凭借)",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 33,
+      "bbox": [
+        847,
+        720,
+        1477,
+        877
+      ],
+      "text": "15.以③投以骨(把)④以刀劈狼首(用)⑤意将隧入以攻其后也(来,表目的)",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 34,
+      "bbox": [
+        849,
+        875,
+        1362,
+        972
+      ],
+      "text": "16.乃①屠乃奔倚其下(于是)②乃悟前狼假寐(才)",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 35,
+      "bbox": [
+        843,
+        975,
+        1387,
+        1074
+      ],
+      "text": "17.日$\\begin{cases}\\text{①日月星宿（太阳）} \\\\\\text{②终日在地上行止（每天）}\\end{cases}$",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 36,
+      "bbox": [
+        842,
+        1073,
+        1460,
+        1179
+      ],
+      "text": "18.闻①有闻而传之者曰(听到，动词)②求闻之若此(消息，听闻 名词)",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 37,
+      "bbox": [
+        915,
+        1178,
+        1323,
+        1323
+      ],
+      "text": "①求闻之若此（象）\n②若屈伸呼吸（你）\n①于我如浮云（对）",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 38,
+      "bbox": [
+        837,
+        1347,
+        931,
+        1392
+      ],
+      "text": "20. 于",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 39,
+      "bbox": [
+        937,
+        1324,
+        1351,
+        1376
+      ],
+      "text": "②其一犬坐于前（在）",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 40,
+      "bbox": [
+        933,
+        1374,
+        1415,
+        1476
+      ],
+      "text": "③宋君令人问之于丁氏(何) ④非得一人于井中也(在)",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 41,
+      "bbox": [
+        932,
+        1476,
+        1382,
+        1529
+      ],
+      "text": "①择其善者而从之（他的）",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 42,
+      "bbox": [
+        933,
+        1526,
+        1319,
+        1576
+      ],
+      "text": "②人不堪其忧（那些）",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 43,
+      "bbox": [
+        932,
+        1576,
+        1345,
+        1625
+      ],
+      "text": "③回也不改其乐(他们)",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 44,
+      "bbox": [
+        830,
+        1630,
+        1413,
+        1884
+      ],
+      "text": "21.其④恐前后受其敌(代狼)⑤场主积薪其中(代表场)⑥意将隧入以攻其后也(代屠户)⑦其人曰(那)⑧奈何忧其坏(代天地)",
+      "label": "text",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 45,
+      "bbox": [
+        180,
+        1905,
+        234,
+        1947
+      ],
+      "text": "35",
+      "label": "number",
+      "question_number": null,
+      "split_from_merged": false
+    },
+    {
+      "id": 46,
+      "bbox": [
+        251,
+        1914,
+        402,
+        1946
+      ],
+      "text": "语文 七年级上册",
+      "label": "footer",
+      "question_number": null,
+      "split_from_merged": false
+    }
+  ]
+}

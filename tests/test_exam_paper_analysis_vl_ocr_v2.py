@@ -138,7 +138,13 @@ class OCRBasedSplitter:
         # 创建子块
         sub_blocks = []
         for i, (match, bbox) in enumerate(zip(unique_matches, sub_bboxes)):
-            start = match['start_pos']
+            # 第一个子块从文本开头开始，后续子块从对应题号位置开始
+            if i == 0:
+                start = 0
+            else:
+                start = match['start_pos']
+
+            # 结束位置为下一个题号的起始位置，最后一个子块到文本末尾
             end = unique_matches[i+1]['start_pos'] if i+1 < len(unique_matches) else len(block.text)
             sub_text = block.text[start:end].strip()
 
@@ -293,33 +299,116 @@ class OCRBasedSplitter:
 # ==================== 新增：规则过滤器 ====================
 
 class ContextAwareSplitter:
-    """基于规则的拆分器"""
+    """基于规则的拆分器（支持VL视觉辅助）"""
 
     # 题号正则模式
     QUESTION_PATTERNS = [
-        r'^(\d+)[\.、]\s*',        # 1. 或 1、
-        r'^\((\d+)\)\s*',          # (1)
-        r'^第(\d+)题\s*',          # 第1题
-        r'^\[(\d+)\]\s*',          # [1]
-        r'^[【](\d+)[】]\s*',       # 【1】
+        r'(\d+)[\.、]\s*',        # 1. 或 1、
+        r'\((\d+)\)\s*',          # (1)
+        r'第(\d+)题\s*',          # 第1题
+        r'\[(\d+)\]\s*',          # [1]
+        r'[【](\d+)[】]\s*',       # 【1】
     ]
 
-    def detect_and_validate(self, text: str) -> Optional[List[Dict[str, Any]]]:
+    # VL 提示词模板
+    VL_PROMPT_TEMPLATE = """这是一个文本块的图像区域。请分析这个区域包含几道题目。
+
+**文本内容**：
+{text}
+
+**任务**：
+1. 判断这个区域是否包含多道题目（通过题号识别，如"1."、"2."、"第1题"、"第2题"等）
+2. 如果包含多道题目，请列出所有题号
+
+**输出格式**：
+请直接返回 JSON 格式：
+```json
+{{
+  "has_multiple_questions": true/false,
+  "question_numbers": [1, 2, 3, ...]
+}}
+```
+
+如果只有一道题或没有题号，返回：
+```json
+{{
+  "has_multiple_questions": false,
+  "question_numbers": []
+}}
+```"""
+
+    def __init__(self, vl_detector=None):
         """
-        检测并验证文本中的题号
+        Args:
+            vl_detector: VL视觉检测器（可选，用于辅助判断）
+        """
+        self.vl_detector = vl_detector
+
+    def detect_and_validate(
+        self,
+        text: str,
+        block: DetectionBlock = None,
+        original_image: np.ndarray = None
+    ) -> Optional[List[Dict[str, Any]]]:
+        """
+        检测并验证文本中的题号（混合方案）
+
+        Args:
+            text: 文本内容
+            block: 文本块（用于VL检测）
+            original_image: 原始图像（用于VL检测）
 
         Returns:
             如果需要拆分，返回题号列表；否则返回 None
         """
-        question_numbers = self._detect_question_numbers(text)
-        if len(question_numbers) <= 1:
-            return None
+        # 1. 首行限制检测
+        question_numbers_strict = self._detect_question_numbers(text, strict_line_start=True)
 
-        return question_numbers
+        # 2. 无首行限制检测
+        question_numbers_loose = self._detect_question_numbers(text, strict_line_start=False)
+
+        # 3. 比较两种检测结果
+        strict_count = len(question_numbers_strict)
+        loose_count = len(question_numbers_loose)
+
+        logger.info(f"题号检测: 首行限制={strict_count}个, 无首行限制={loose_count}个")
+
+        # 如果两种方式检测数量一致，使用首行限制结果（更准确）
+        if strict_count == loose_count:
+            if strict_count <= 1:
+                return None
+            return question_numbers_strict
+
+        # 如果数量不一致，且启用了VL检测，使用VL辅助判断
+        if self.vl_detector and block and original_image is not None:
+            logger.info(f"题号检测数量不一致，使用VL视觉辅助判断")
+            vl_result = self._detect_with_vl(text, block, original_image)
+
+            if vl_result:
+                return vl_result
+            else:
+                # VL检测失败，降级使用首行限制结果
+                logger.warning("VL检测失败，使用首行限制结果")
+                if strict_count <= 1:
+                    return None
+                return question_numbers_strict
+        else:
+            # 未启用VL或缺少必要参数，使用首行限制结果
+            if strict_count <= 1:
+                return None
+            return question_numbers_strict
     
-    def _detect_question_numbers(self, text: str) -> List[Dict[str, Any]]:
+    def _detect_question_numbers(
+        self,
+        text: str,
+        strict_line_start: bool = True
+    ) -> List[Dict[str, Any]]:
         """
         检测文本中的所有题号
+
+        Args:
+            text: 文本内容
+            strict_line_start: 是否严格要求题号在行首
 
         Returns:
             [{'number': int, 'position': int, 'matched_str': str, 'pattern': str}]
@@ -328,7 +417,9 @@ class ContextAwareSplitter:
 
         for pattern in self.QUESTION_PATTERNS:
             try:
-                for match in re.finditer(pattern, text, re.MULTILINE):
+                # 根据 strict_line_start 决定是否使用 MULTILINE 模式
+                flags = re.MULTILINE if strict_line_start else 0
+                for match in re.finditer(pattern, text, flags):
                     number = int(match.group(1))
                     position = match.start()
                     matched_str = match.group(0)
@@ -355,14 +446,15 @@ class ContextAwareSplitter:
                 last_pos = qn['position']
 
         # 验证题号的合理性
-        validated = self._validate_question_sequence(filtered, text)
+        validated = self._validate_question_sequence(filtered, text, strict_line_start)
 
         return validated
 
     def _validate_question_sequence(
         self,
         question_numbers: List[Dict[str, Any]],
-        text: str
+        text: str,
+        strict_line_start: bool = True
     ) -> List[Dict[str, Any]]:
         """
         验证题号序列的合理性
@@ -375,8 +467,8 @@ class ContextAwareSplitter:
         validated = []
 
         for qn in question_numbers:
-            # 检查1: 位置应该在行首或接近行首
-            if not self._is_at_line_start(qn['position'], text):
+            # 检查1: 位置应该在行首或接近行首（仅在 strict_line_start=True 时检查）
+            if strict_line_start and not self._is_at_line_start(qn['position'], text):
                 logger.debug(f"题号{qn['number']}不在行首，可能是误匹配")
                 continue
 
@@ -406,6 +498,100 @@ class ContextAwareSplitter:
         # 检查换行符到当前位置之间是否只有空白字符
         between = before_text[last_newline + 1:position]
         return len(between.strip()) == 0
+
+    def _detect_with_vl(
+        self,
+        text: str,
+        block: DetectionBlock,
+        original_image: np.ndarray
+    ) -> Optional[List[Dict[str, Any]]]:
+        """
+        使用VL视觉模型检测题号
+
+        Args:
+            text: 文本内容
+            block: 文本块
+            original_image: 原始图像
+
+        Returns:
+            题号列表或None
+        """
+        try:
+            # 裁剪文本块对应的图像区域
+            x1, y1, x2, y2 = block.bbox
+            cropped_image = original_image[y1:y2, x1:x2]
+
+            # 编码图像
+            _, buffer = cv2.imencode('.jpg', cropped_image)
+            image_bytes = buffer.tobytes()
+            base64_image = base64.b64encode(image_bytes).decode('utf-8')
+
+            # 构建提示词
+            prompt = self.VL_PROMPT_TEMPLATE.format(text=text[:500])  # 限制文本长度
+
+            # 调用VL模型
+            response = self.vl_detector.client.chat.completions.create(
+                model=self.vl_detector.model if hasattr(self.vl_detector, 'model') else "qwen-vl-max",
+                messages=[
+                    {
+                        "role": "user",
+                        "content": [
+                            {
+                                "type": "image_url",
+                                "image_url": {"url": f"data:image/jpeg;base64,{base64_image}"}
+                            },
+                            {
+                                "type": "text",
+                                "text": prompt
+                            }
+                        ]
+                    }
+                ]
+            )
+
+            result_text = response.choices[0].message.content
+            logger.debug(f"VL检测返回: {result_text}")
+
+            # 解析JSON结果
+            result_text = result_text.replace("```json", "").replace("```", "").strip()
+            vl_result = json.loads(result_text)
+
+            if vl_result.get('has_multiple_questions') and vl_result.get('question_numbers'):
+                # 将VL返回的题号转换为标准格式
+                question_numbers = []
+                for qn in vl_result['question_numbers']:
+                    # 在原文本中查找对应题号的位置
+                    # 将通配符 (\d+) 替换为具体数字的字面量匹配
+                    found = False
+                    for pattern in self.QUESTION_PATTERNS:
+                        # 构造匹配特定题号的正则表达式
+                        # r'(\d+)[\.、]\s*' → r'3[\.、]\s*'
+                        # r'\((\d+)\)\s*' → r'\(3\)\s*'
+                        # r'第(\d+)题\s*' → r'第3题\s*'
+                        specific_pattern = pattern.replace(r'(\d+)', str(qn))
+                        match = re.search(specific_pattern, text)
+                        if match:
+                            question_numbers.append({
+                                'number': qn,
+                                'position': match.start(),
+                                'matched_str': match.group(0),
+                                'pattern': pattern
+                            })
+                            found = True
+                            break
+
+                    if not found:
+                        logger.warning(f"VL检测到题号{qn}，但在文本中找不到对应位置")
+
+                if len(question_numbers) > 1:
+                    logger.info(f"VL检测成功: 检测到 {len(question_numbers)} 个题号，位置: {[(q['number'], q['position']) for q in question_numbers]}")
+                    return question_numbers
+
+            return None
+
+        except Exception as e:
+            logger.warning(f"VL检测失败: {e}")
+            return None
 
 
 # ==================== 原有组件（继承自 v1）====================
@@ -1051,6 +1237,10 @@ class ExamPaperAnalyzerVLV2:
                 ocr_api_key=api_key
             )
 
+        self.visual_marker = VisualMarker()
+        self.vl_aggregator = QwenVLAggregator()
+        self.post_processor = PostProcessor()
+
         # 新增：初始化本地 OCR（用于精确拆分）
         if enable_ocr_split:
             try:
@@ -1080,15 +1270,13 @@ class ExamPaperAnalyzerVLV2:
 
                 self.ocr_model = PaddleOCR(**ocr_params)
                 self.ocr_splitter = OCRBasedSplitter(self.ocr_model)
-                self.rule_filter = ContextAwareSplitter()
+                # 初始化规则过滤器，传入VL聚合器用于辅助检测
+                self.rule_filter = ContextAwareSplitter(vl_detector=self.vl_aggregator)
                 logger.info("OCR 精确拆分器初始化成功")
             except Exception as e:
                 logger.warning(f"OCR 精确拆分器初始化失败: {e}，将跳过拆分步骤")
                 self.enable_ocr_split = False
 
-        self.visual_marker = VisualMarker()
-        self.vl_aggregator = QwenVLAggregator()
-        self.post_processor = PostProcessor()
 
     def analyze(
         self,
@@ -1141,8 +1329,12 @@ class ExamPaperAnalyzerVLV2:
 
             for block in blocks:
                 if block.label == "text":
-                    # 检测题号
-                    question_matches = self.rule_filter.detect_and_validate(block.text)
+                    # 检测题号（传入block和原始图像用于VL辅助检测）
+                    question_matches = self.rule_filter.detect_and_validate(
+                        text=block.text,
+                        block=block,
+                        original_image=original_image
+                    )
                     if question_matches:
                         logger.info(f"文本：{block.text[:50]}... 检测到 {len(question_matches)} 个题号，需要拆分")
                         try:
@@ -1297,7 +1489,7 @@ class ExamPaperAnalyzerVLV2:
 
 def main():
     """测试主函数"""
-    IMAGE_PATH = r"D:\WorkProjects\doc-ocr\input\2.png"
+    IMAGE_PATH = r"D:\WorkProjects\doc-ocr\input\3.jpg"
     OUTPUT_DIR = "./output/exam_analysis_vl_v2"
     VL_MODEL = "qwen-vl-max"
 
